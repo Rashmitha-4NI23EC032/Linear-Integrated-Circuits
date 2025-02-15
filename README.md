@@ -45,7 +45,7 @@
 <br>V<sub>ds</sub> > V<sub>ov</sub> , which indicates its in saturation region .</br>
 <br><p>The DC Analysis is used to check wheather the transistor is acting as an amplifier(saturation region).The operating point will be (V<sub>ds</sub> , I<sub>d</sub>)
 i.e (1.8V,55.2µA).</p></br>
-<br><em>ii) Transisent Analysis</em></br>
+<br>**ii) Transient Analysis**</br>
 <br><p>The simulation techinque used to observe the response with respect to the time.In this analysis we can determine or verify the gain of the give circuit.For input we need to give the sinusodial voltage signal in which the DC offset is 0.9V and the V<sub>peak</sub>is 50mV and the frequency is 1kHz the Ac amplitude will be 1V.We need to select the stop time of 3m s</p></br>
 
 <br>From graph we can calculate the gain of the circuit </br>
@@ -56,8 +56,8 @@ i.e (1.8V,55.2µA).</p></br>
 <br>where gm=K<sub>n</sub>V<sub>ov</sub></br>
 <br> From graph we can clearly observe there is an 180 degree phase shift that is exibited by Common source configuration.</br>
 <br>Therefore we can conclude its Gain > 1 and has 180 degree phase shift therefore its an NMOS Common source Amplifier. </br>
-<br><em>iii) AC Analysis </em></br>
-<br> <p>In this AC Analysis we will evaluate the frequency response cure of the given circuit.By applying the Small signal analysis for the given circuit. In this Analysis we need to check in which frequency it act as a linear amplifier.</p></br>
+<br>**iii) AC Analysis**</br>
+<br><p>In this AC Analysis we will evaluate the frequency response cure of the given circuit.By applying the Small signal analysis for the given circuit. In this Analysis we need to check in which frequency it act as a linear amplifier.</p></br>
 <br><p>While doing simulation we need to select the decade as type of sweep,with starting frequency as 0.1Hz and the stoping frequency as 1THz.</p></br>
 <br>Frequency Response :</br>
   
