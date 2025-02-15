@@ -43,7 +43,7 @@
 </table>
 <br>V<sub>ds</sub>=V<sub>d</sub>-V<sub>s</sub>=1.8-0=1.8V</br>
 <br>V<sub>ds</sub> > V<sub>ov</sub> , which indicates its in saturation region .</br>
-<br><p>The DC Analysis is used to check wheather the transistor is acting as an amplifier(saturation region).The operating point will be (V<sub>ds</sub> , I<suub>d</suub>)
+<br><p>The DC Analysis is used to check wheather the transistor is acting as an amplifier(saturation region).The operating point will be (V<sub>ds</sub> , I<sub>d</sub>)
 i.e (1.8V,55.2µA).</p></br>
 <br><em>ii) Transisent Analysis</em></br>
 <br><p>The simulation techinque used to observe the response with respect to the time.In this analysis we can determine or verify the gain of the give circuit.For input we need to give the sinusodial voltage signal in which the DC offset is 0.9V and the V<sub>peak</sub>is 50mV and the frequency is 1kHz the Ac amplitude will be 1V.We need to select the stop time of 3m s</p></br>
@@ -51,7 +51,7 @@ i.e (1.8V,55.2µA).</p></br>
 <br>From graph we can calculate the gain of the circuit </br>
 <br>A<sub>v</sub>=V<sub>out/V<sub>in</sub></br>
 <br>A<sub>v</sub>=1.75V/950mV</br>
-<br>A<sub>v</sub>=1.8V/V
+<br>A<sub>v</sub>=1.8V/V</br>
 <br>which will match the theortical value calculated by A<sub>v</sub>=gmR<sub>d</sub></br>
 <br>where gm=K<sub>n</sub>V<sub>ov</sub></br>
 <br> From graph we can clearly observe there is an 180 degree phase shift that is exibited by Common source configuration.</br>
