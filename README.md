@@ -49,13 +49,16 @@ i.e (1.8V,55.2µA).</p></br>
 <br><p>The simulation techinque used to observe the response with respect to the time.In this analysis we can determine or verify the gain of the give circuit.For input we need to give the sinusodial voltage signal in which the DC offset is 0.9V and the V<sub>peak</sub>is 50mV and the frequency is 1kHz the Ac amplitude will be 1V.We need to select the stop time of 3m s</p></br>
 
 <br>From graph we can calculate the gain of the circuit </br>
-<br>A<sub>v</sub>=V<sub>out/V<sub>in</suub></br>
+<br>A<sub>v</sub>=V<sub>out/V<sub>in</sub></br>
 <br>A<sub>v</sub>=1.75V/950mV</br>
 <br>A<sub>v</sub>=1.8V/V
-<br>which will match the theortical value calculated be A<sub>v</sub>=gm*R<sub>d</sub></br>
-<br>where gm=K<sub>n</sub>*V<sub>ov</sub></br>
+<br>which will match the theortical value calculated by A<sub>v</sub>=gmR<sub>d</sub></br>
+<br>where gm=K<sub>n</sub>V<sub>ov</sub></br>
 <br> From graph we can clearly observe there is an 180 degree phase shift that is exibited by Common source configuration.</br>
 <br>Therefore we can conclude its Gain > 1 and has 180 degree phase shift therefore its an NMOS Common source Amplifier. </br>
 <br><em>iii) AC Analysis </em></br>
 <br> <p>In this AC Analysis we will evaluate the frequency response cure of the given circuit.By applying the Small signal analysis for the given circuit. In this Analysis we need to check in which frequency it act as a linear amplifier.</p></br>
 <br><p>While doing simulation we need to select the decade as type of sweep,with starting frequency as 0.1Hz and the stoping frequency as 1THz.</p></br>
+![Image](https://github.com/user-attachments/assets/c845e953-3995-4944-9111-c31b19d2272d)
+<br> In this due to higher frequency the Parasitic Capacitor (internal capactiors) will get acctivated.</br>
+<br>AT lower frequency the coupling Capacitors will get activated</br>
