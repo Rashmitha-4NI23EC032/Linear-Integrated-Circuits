@@ -61,4 +61,3 @@ i.e (1.8V,55.2µA).</p></br>
 ![Image](https://github.com/user-attachments/assets/c845e953-3995-4944-9111-c31b19d2272d)
 <br> In this due to higher frequency the Parasitic Capacitor (internal capactiors) will get acctivated.</br>
 <br>AT lower frequency the coupling Capacitors will get activated</br>
-
