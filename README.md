@@ -47,7 +47,6 @@
 i.e (1.8V,55.2µA).</p></br>
 <br><em>ii) Transisent Analysis</em></br>
 <br><p>The simulation techinque used to observe the response with respect to the time.In this analysis we can determine or verify the gain of the give circuit.For input we need to give the sinusodial voltage signal in which the DC offset is 0.9V and the V<sub>peak</sub>is 50mV and the frequency is 1kHz the Ac amplitude will be 1V.We need to select the stop time of 3m s</p></br>
-
 <br>From graph we can calculate the gain of the circuit </br>
 <br>A<sub>v</sub>=V<sub>out/V<sub>in</sub></br>
 <br>A<sub>v</sub>=1.75V/950mV</br>
@@ -62,3 +61,4 @@ i.e (1.8V,55.2µA).</p></br>
 ![Image](https://github.com/user-attachments/assets/c845e953-3995-4944-9111-c31b19d2272d)
 <br> In this due to higher frequency the Parasitic Capacitor (internal capactiors) will get acctivated.</br>
 <br>AT lower frequency the coupling Capacitors will get activated</br>
+
