@@ -60,7 +60,7 @@ i.e (1.8V,55.2µA).</p></br>
 <br><p>In this AC Analysis we will evaluate the frequency response cure of the given circuit.By applying the Small signal analysis for the given circuit. In this Analysis we need to check in which frequency it act as a linear amplifier.</p></br>
 <br><p>While doing simulation we need to select the decade as type of sweep,with starting frequency as 0.1Hz and the stoping frequency as 1THz.</p></br>
 <br>Frequency Response :</br>
-  
+ ![Image](https://github.com/user-attachments/assets/aee3eb9a-30bb-4010-8b66-00b9ea072885) 
 <br> In this due to higher frequency the Parasitic Capacitor (internal capactiors) will get acctivated.</br>
 <br> At lower frequency the coupling Capacitors will get activated.</br>
 
