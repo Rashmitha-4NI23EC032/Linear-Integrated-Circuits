@@ -46,7 +46,7 @@
 <br><p>The DC Analysis is used to check wheather the transistor is acting as an amplifier(saturation region).The operating point will be (V<sub>ds</sub> , I<sub>d</sub>)
 i.e (1.8V,55.2µA).</p></br>
 <br>**ii) Transient Analysis**</br>
-<br><p>The simulation techinque used to observe the response with respect to the time.In this analysis we can determine or verify the gain of the give circuit.For input we need to give the sinusodial voltage signal in which the DC offset is 0.9V and the V<sub>peak</sub>is 50mV and the frequency is 1kHz the Ac amplitude will be 1V.We need to select the stop time of 3m s</p></br>
+<br><p>The simulation techinque used to observe the response with respect to the time.In this analysis we can determine or verify the gain of the give circuit.For input we need to give the sinusodial voltage signal in which the DC offset is 0.9V and the V<sub>peak</sub>is 50mV and the frequency is 1kHz the Ac amplitude will be 1V.We need to select the stop time of 3ms</p></br>
 
 <br>From graph we can calculate the gain of the circuit </br>
 <br>A<sub>v</sub>=V<sub>out/V<sub>in</sub></br>
@@ -63,4 +63,6 @@ i.e (1.8V,55.2µA).</p></br>
  ![Image](https://github.com/user-attachments/assets/aee3eb9a-30bb-4010-8b66-00b9ea072885) 
 <br> In this due to higher frequency the Parasitic Capacitor (internal capactiors) will get acctivated.</br>
 <br> At lower frequency the coupling Capacitors will get activated.</br>
+
+
 
