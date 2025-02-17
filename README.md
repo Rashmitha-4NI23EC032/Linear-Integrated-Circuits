@@ -1,14 +1,14 @@
 <em>Experiment 1</em>
 <br><em>Aim:</em> DC,AC,Transient analysis of Common Source NMOS Amplifier</br>
-<br><em>Theory:</em></br><p>The common source amplifier in which the input is given to the gate terminal and output is taken from the drain terminal. The source is common to both the input and output. The common source amplifier has 180 degree phase shift.</p></br>
-<br><em>Components Required:</em></br>
-<br>Resistor:1k ohms, NCMOS transistor(180nm technology), DC power supply</br>
-<br><em>Circuit design : </em></br>
+<br>**Abstract**:<p> The DC,AC and Transient analysis of common source amplifier(CS) using LT spice is used to understand the characterstic of the given circuit. The DC Analysis is used to determine the Operating point(Qpoint) of the circuit ensuring proper baising for the linear opearation.The AC Analysisis used to evaluate the amplifiers frequency response,Gain,Phase shift,and the bandwidth of the circuit. The Transient Analysis is used to get to know the amplifiers response of input with respect to the time.The simulation results will provide the Amplifiers gain stability,bandwidth and the transient behaviour which are essential during the design of the circuit.</p></br> 
+<br>**Introduction**:<p> The common source amplifier is the fundamental circuit in the Analog domain which are used for the signal amplification for the various applications.It is the basic configuration of the MOSFET(Metal oxide semiconductor field effective transistor) where the input is giveto the gate terminal and output is driven form the drain terminal and the source is grounded .This amplifier will give the significant gain which is ideally 1 and this amplifier will act as the buffer amplifier which as 180 degree phase shift.</p><p>For the study of this amplifier we have used the LT spice software for the DC ,AC ans transient Analysis of the circuit.The DC Analysis is used to determine the Q point in such a way that the transistor is operating in the saturtaion region. The AC analysis is used to determine the gain, amplifiers frequency response and the bandwidth of the amplifier.Transient is used to get to know the amplifier's time domain response to an input signal.For this software we have used the library called tsmc018.lib.We need to download the library and dump it into the same folder where the simualtion file is save.</p></br>
+<br><em>Design 1</em>:</br>
 ![Image](https://github.com/user-attachments/assets/b6f85d21-1ce1-452f-a2b8-def507cbb9ba)
+<br>**Simulation Results**:</br>
 <br>**i) DC Analysis**</br>
-<br><p> In DC Analysis we determiine the Qpoint or the operating point of the transistor. The Q point is crucial as it influences the amplifier gain and the signal swing.</p></br>
+<br><p>The DC Analysis is used to determine the Q point in such a way that the transistor is operating in the saturtaion region and ensuring the poper biasing for the linear amplification.</p></br>
 ![Image](https://github.com/user-attachments/assets/9a5b6602-1f51-40ee-ae98-9c608f4fef62)
-<br>From simulation: V<sub>out</sub>=1.8V , V<sub>in</sub>=0.9V , I<sub>d</sub>=55.5µA.</br>
+<br>V<sub>out</sub>=1.8V , V<sub>in</sub>=0.9V , I<sub>d</sub>=55.5µA.</br>
 <br> Given the power dissipation is 100µW, then the current accros the resistor will be I<sub>d</sub>=Power/Voltage =55.5µA.</br>
 <br>The output load line equation is given by</br><br>V<sub>out</sub>=V<sub>dd</sub>-(I<sub>d</sub>*R<sub>d</sub>). From this equation we can find out the R<sub>d</sub> value </br>
 <table>
@@ -41,12 +41,11 @@
     <td>55.2µ</td>
   </tr>
 </table>
-<br>V<sub>ds</sub>=V<sub>d</sub>-V<sub>s</sub>=1.8-0=1.8V</br>
-<br>V<sub>ds</sub> > V<sub>ov</sub> , which indicates its in saturation region .</br>
-<br><p>The DC Analysis is used to check wheather the transistor is acting as an amplifier(saturation region).The operating point will be (V<sub>ds</sub> , I<sub>d</sub>)
+<br><p>V<sub>ds</sub>=V<sub>d</sub>-V<sub>s</sub>=1.8-0=1.8V</p><p>V<sub>ds</sub> > V<sub>ov</sub> , which indicates its in saturation region .</p><p>The operating point will be (V<sub>ds</sub> , I<sub>d</sub>)
 i.e (1.8V,55.2µA).</p></br>
-<br>**ii) Transient Analysis**</br>
-<br><p>The simulation techinque used to observe the response with respect to the time.In this analysis we can determine or verify the gain of the give circuit.For input we need to give the sinusodial voltage signal in which the DC offset is 0.9V and the V<sub>peak</sub>is 50mV and the frequency is 1kHz the Ac amplitude will be 1V.We need to select the stop time of 3ms</p></br>
+
+**ii) Transient Analysis**:
+<br><p>The simulation techinque used to observe the amplifier's time domain response to an input signal .For input we need to give the sinusodial voltage signal in which the DC offset is 0.9V and the V<sub>peak</sub>is 50mV and the frequency is 1kHz the Ac amplitude will be 1V.We need to select the stop time of 3ms.</p></br>
 
 <br>From graph we can calculate the gain of the circuit </br>
 <br>A<sub>v</sub>=V<sub>out/V<sub>in</sub></br>
