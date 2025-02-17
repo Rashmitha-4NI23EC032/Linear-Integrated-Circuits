@@ -70,8 +70,42 @@ i.e (1.8V,55.2µA).</p></br>
 <br>**Simulation Results**:</br>
 <br>**i) DC Analysis**</br>
 <br><p>The DC Analysis is used to determine the Q point in such a way that the transistor is operating in the saturtaion region and ensuring the poper biasing for the linear amplification.</p></br>
+![Image](https://github.com/user-attachments/assets/603c9042-133b-4bd3-8f6e-5146a48549fb)
+<br>V<sub>out</sub>=1.25V , V<sub>in</sub>=0.9V , V<sub>b</sub>=0.05, I<sub>d</sub>=55.5µA.</br>
+<br> Given the power dissipation is 100µW, then the current will be I<sub>d</sub>=Power/Voltage =55.5µA.</br>
+<table>
+  <tr>
+    <td>Width(m)</td>
+    <td>I<sub>d</sub>(A)</td> 
+  </tr>
+  <tr>
+    <td>0.15µ</td>
+    <td>47.3µ</td>
+  </tr>
+  <tr>
+    <td>0.2µ</td>
+    <td>51.9µ</td>
+  </tr>
+  <tr>
+    <td>0.210µ</td>
+    <td>52.9µ</td>
+  </tr>
+  <tr>
+    <td>0.215µ</td>
+    <td>53.4µ</td>
+  </tr>
+  <tr>
+    <td>0.220µ</td>
+    <td>53.9µ</td>
+  </tr>
+  <tr>
+    <td>0.235µ</td>
+    <td>55.5µ</td>
+  </tr>
+</table>
+<br><p>V<sub>ds</sub>=V<sub>d</sub>-V<sub>s</sub>=1.25-0=1.25V</p><p>V<sub>ds</sub> > V<sub>ov</sub> , which indicates its in saturation region .</p><p>The operating point will be (V<sub>ds</sub> , I<sub>d</sub>)
+i.e (1.25V,55.5µA).</p></br>
 
-
-
-
-
+**ii) Transient Analysis**:
+<br><p>The simulation techinque used to observe the amplifier's time domain response to an input signal .For input we need to give the sinusodial voltage signal in which the DC offset is 0.9V and the V<sub>peak</sub>is 50mV and the frequency is 1kHz the Ac amplitude will be 1V.We need to select the stop time of 3ms.</p></br>
+<br>Input wave</br>
