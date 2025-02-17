@@ -46,7 +46,7 @@ i.e (1.8V,55.2µA).</p></br>
 
 **ii) Transient Analysis**:
 <br><p>The simulation techinque used to observe the amplifier's time domain response to an input signal .For input we need to give the sinusodial voltage signal in which the DC offset is 0.9V and the V<sub>peak</sub>is 50mV and the frequency is 1kHz the Ac amplitude will be 1V.We need to select the stop time of 3ms.</p></br>
-
+![Image](https://github.com/user-attachments/assets/0d6191c7-6326-49d0-9499-6626b21bfc25) 
 <br>From graph we can calculate the gain of the circuit </br>
 <br>A<sub>v</sub>=V<sub>out/V<sub>in</sub></br>
 <br>A<sub>v</sub>=1.75V/950mV</br>
