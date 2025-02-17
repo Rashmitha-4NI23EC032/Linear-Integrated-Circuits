@@ -3,6 +3,50 @@
 <br>**Abstract**:<p> The DC,AC and Transient analysis of common source amplifier(CS) using LT spice is used to understand the characterstic of the given circuit. The DC Analysis is used to determine the Operating point(Qpoint) of the circuit ensuring proper baising for the linear opearation.The AC Analysisis used to evaluate the amplifiers frequency response,Gain,Phase shift,and the bandwidth of the circuit. The Transient Analysis is used to get to know the amplifiers response of input with respect to the time.The simulation results will provide the Amplifiers gain stability,bandwidth and the transient behaviour which are essential during the design of the circuit.</p></br> 
 <br>**Introduction**:<p> The common source amplifier is the fundamental circuit in the Analog domain which are used for the signal amplification for the various applications.It is the basic configuration of the MOSFET(Metal oxide semiconductor field effective transistor) where the input is giveto the gate terminal and output is driven form the drain terminal and the source is grounded .This amplifier will give the significant gain which is ideally 1 and this amplifier will act as the buffer amplifier which as 180 degree phase shift.</p><p>For the study of this amplifier we have used the LT spice software for the DC ,AC ans transient Analysis of the circuit.The DC Analysis is used to determine the Q point in such a way that the transistor is operating in the saturtaion region. The AC analysis is used to determine the gain, amplifiers frequency response and the bandwidth of the amplifier.Transient is used to get to know the amplifier's time domain response to an input signal.For this software we have used the library called tsmc018.lib.We need to download the library and dump it into the same folder where the simualtion file is save.</p></br>
 
+**Design specifications**
+<table>
+  <tr>
+    <td>Parameters</td>
+    <td>Specifications</td>
+  </tr>
+  <tr>
+    <td>Supply Voltage</td>
+    <td>1.8V</td>
+  </tr>
+  <tr>
+    <td>V<sub>tp</sub></td>
+    <td>-0.39V</td>
+  </tr>
+  <tr>
+    <td>V<sub>tn</sub></td>
+    <td>0.39V</td>
+  </tr>
+  <tr>
+    <td>Length</td>
+    <td>180nm</td>
+  </tr>
+  <tr>
+    <td>Width</td>
+    <td>0.25µm</td>
+  </tr>
+  <tr>
+    <td>µ<sub>n</sub></td>
+    <td>273.809m<sup>2</sup>/V</td>
+  </tr>
+  <tr>
+    <td>µ<sub>p</sub></td>
+    <td>115.689m<sup>2</sup>/V</td>
+  </tr>
+  <tr>
+    <td>T<sub>oxn</sub>,T<sub>oxp</sub></td>
+    <td>4.1nm</sup></td>
+  </tr>
+  <tr>
+    <td>E<sub>ox</sub></td>
+    <td>3.45*10<sup>-11</sup>F/m</td>
+  </tr>
+</table>
+
 **Design1**
 
 ![Image](https://github.com/user-attachments/assets/b6f85d21-1ce1-452f-a2b8-def507cbb9ba) 
@@ -67,6 +111,8 @@ i.e (1.8V,55.2µA).</p></br>
 **Design 2**
 
 ![Image](https://github.com/user-attachments/assets/229678b4-2532-4242-9b94-e772871a8ea4)
+
+
 <br>**Simulation Results**:</br>
 <br>**i) DC Analysis**</br>
 <br><p>The DC Analysis is used to determine the Q point in such a way that the transistor is operating in the saturtaion region and ensuring the poper biasing for the linear amplification.</p></br>
@@ -119,3 +165,8 @@ i.e (1.25V,55.5µA).</p></br>
 <br>**iii) AC Analysis**</br>
 <br><p>The AC analysis is used to determine the gain, amplifiers frequency response and the bandwidth of the amplifier.</p><p>While doing simulation we need to select the decade as type of sweep,with starting frequency as 0.1Hz and the stoping frequency as 1THz.</p></br>
 <br>Frequency Response :</br>
+![Image](https://github.com/user-attachments/assets/3a86a8a5-3b7f-42f7-8f8f-0745c72ce874)
+<br>A<sub>v</sub>=1.35V/950mV</p><p>A<sub>v</sub>=1.42V/V</p><p>In this due to higher frequency the Parasitic Capacitor (internal capactiors) will get acctivated.</p><p>At lower frequency the coupling Capacitors will get activated.</p></br>
+
+**Inference**
+<br><p>The PMOS acts as an active load, providing a higher small-signal resistance compared to a passive resistor. This results in a higher voltage gain for the circuit.</p><p>The PMOS transistor operates in saturation, offering better linearity and dynamic range than a fixed resistor.</p><p>The PMOS requires a proper bias voltage (Vb = 0.58V) at its gate to ensure it remains in saturation.</p>In intigrated circuits, replacing the resistor by PMOS reduces the space.</p><p>Circuit 1 is simple and easy to design, but circuit 2 is complex as you must require a proper biasing voltage (Vb).</P></br>
