@@ -109,3 +109,13 @@ i.e (1.25V,55.5µA).</p></br>
 **ii) Transient Analysis**:
 <br><p>The simulation techinque used to observe the amplifier's time domain response to an input signal .For input we need to give the sinusodial voltage signal in which the DC offset is 0.9V and the V<sub>peak</sub>is 50mV and the frequency is 1kHz the Ac amplitude will be 1V.We need to select the stop time of 3ms.</p></br>
 <br>Input wave</br>
+![Image](https://github.com/user-attachments/assets/c66e025f-bac4-4d82-bb0c-01c2e98f5555)
+<br>From graph we can calculate the gain of the circuit</br>
+<br><p>A<sub>v</sub>=V<sub>out/V<sub>in</sub>
+<br>A<sub>v</sub>=1.35V/950mV</p><p>A<sub>v</sub>=1.42V/V</p></br>
+<br><p>which will match the theortical value calculated by A<sub>v</sub>=gmR<sub>d</sub></p><p>where gm=K<sub>n</sub>V<sub>ov</sub></p></br>
+<br> From graph we can clearly observe there is an 180 degree phase shift that is exibited by Common source configuration.</br>
+<br>Therefore we can conclude its Gain > 1 and has 180 degree phase shift therefore its an NMOS Common source Amplifier. </br>
+<br>**iii) AC Analysis**</br>
+<br><p>The AC analysis is used to determine the gain, amplifiers frequency response and the bandwidth of the amplifier.</p><p>While doing simulation we need to select the decade as type of sweep,with starting frequency as 0.1Hz and the stoping frequency as 1THz.</p></br>
+<br>Frequency Response :</br>
