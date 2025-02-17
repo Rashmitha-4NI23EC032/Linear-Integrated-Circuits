@@ -66,6 +66,11 @@ i.e (1.8V,55.2µA).</p></br>
 
 **Design 2**
 
+![Image](https://github.com/user-attachments/assets/229678b4-2532-4242-9b94-e772871a8ea4)
+<br>**Simulation Results**:</br>
+<br>**i) DC Analysis**</br>
+<br><p>The DC Analysis is used to determine the Q point in such a way that the transistor is operating in the saturtaion region and ensuring the poper biasing for the linear amplification.</p></br>
+
 
 
 
