@@ -121,6 +121,18 @@ Design of an circuit
     <td>3dB gain = 10.96 ~ 11dB</td>
   </table>
 - Simulation
-- 
+  
+ ![Image](https://github.com/user-attachments/assets/2cc56e65-1255-42f5-8fa3-2e9352151be6)
+- From the graph the gain is 13.180 dB
+- The 3 dB bandwidth will be 19.433 GHz 
+## Analysis
+- When we change the magnitude of V<sub>icm1</sub> = V<sub>icm2</sub> = V<sub>icm</sub>
+  <table>
+    <td>V<sub>icm</sub> (V)</td>
+    <td>V<sub>ocm</sub> (V)</td>
+    <td>I<sub>D</sub> (A)</td>
+    <td>V<sub>p</sub> (V)</td>
+    <td>I<sub>ss</sub> (A)</td>
+  </table>
 
     
