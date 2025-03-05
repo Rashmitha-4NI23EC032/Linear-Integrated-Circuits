@@ -74,4 +74,34 @@ Design of an circuit
     </table>
 - simulation
 
-  
+  ![Image](https://github.com/user-attachments/assets/55c626a6-cf20-4b9e-a95a-81157eebd55e)
+- from simulation the differential gain will be A<sub>vdm</sub> = (V<sub>ocm1</sub> - V<sub>ocm2</sub> )/(V<sub>icm1</sub> - V<sub>icm2</sub>)
+   -  A<sub>vdm</sub> = 452.87mV/100mV
+     <table>
+     <td>A<sub>vdm</sub> = 4.528V/V</td>
+     </table>
+ - To find Max and Min Swing 
+     - V<sub>icm min</sub> = V<sub>th</sub> + Vp
+     - V<sub>icm min</sub> = 0.36 + 0.5
+     - V<sub>icm min</sub> = 0.86V
+     - V<sub>icm max</sub> = V<sub>DD</sub> - (I<sub>D</sub>*R<sub>D</sub>) + V<sub>th</sub>
+     - V<sub>icm max</sub> = 2.5 - (0.6m*1.833k) + 0.36
+     - V<sub>icm max</sub> = 1.7602V
+     - V<sub>icm</sub>max swing = (0.86 + 1.7602)/2
+       <table>
+         <td>V<sub>icm</sub>max swing = 1.310V</td>
+       </table>
+    - V<sub>ocm min</sub> = V<sub>ov1</sub> + v<sub>p</sub>
+    - V<sub>ocm min</sub> = 0.8 - 0.36 + 0.5
+    - V<sub>ocm min</sub> = 0.94V
+    - V<sub>ocm max</sub> = V<sub>DD</sub> - I<sub>D</sub>*R<sub>D</sub>
+    - V<sub>ocm max</sub> = 2.5 - (0.6m*1.83K)
+    - V<sub>ocm max</sub> = 1.4V
+    - V<sub>ocm</sub>maxswing = (0.94 + 1.4)/2
+      <table>
+        <td>V<sub>ocm</sub>maxswing = 1.17V</td>
+      </table>
+    - simulation
+    - 
+      
+    
