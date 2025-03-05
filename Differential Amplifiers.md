@@ -21,5 +21,14 @@ Analysis:
 
 ## Circuit 1 
 - with Rss resistane.
-
+![Image](https://github.com/user-attachments/assets/c5e56122-7782-4d77-84b5-f03c9e4f847d)
+Design of an circuit
+Assume M1 and M2 are perfectly identical
+Vicm1 = Vicm2 = Vicm
+R<sub>D1</sub> = R<sub>D2</sub> = R<sub>D</sub>
+I<sub>D1</sub> = I<sub>D2</sub> = I<sub>ss</sub>/2
+V<sub>GS1</sub> = V<sub>GS2</sub> =V<sub>GS</sub>
+Vicm = Vp + V<sub>GS</sub>
+1.3 = 0.5 + V<sub>GS</sub>
+1.3-0.5 = V<sub>GS</sub>
 
