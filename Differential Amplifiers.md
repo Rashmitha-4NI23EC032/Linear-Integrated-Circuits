@@ -62,3 +62,16 @@ Design of an circuit
      therefore M1 and M2 are in saturation region 
 - simulation
   
+ ![Image](https://github.com/user-attachments/assets/37c92734-d5be-43e2-b53c-eb0a679c2308)
+  - Transisent Analysis:
+  - A<sub>v</sub> = -g<sub>m</sub>*R<sub>D</sub>
+    - g<sub>gm</sub> = (2*I<sub>D</sub>)/(V<sub>GS</sub> - V<sub>th</sub> )
+    - g<sub>gm</sub> = (2*0.6m)/(0.8-0.36)
+    - g<sub>gm</sub> = 2.77m
+  - A<sub>v</sub> = - 2.7m * 1.83K
+    <table>
+      <td>A<sub>v</sub> = - 4.99V/V</td>
+    </table>
+- simulation
+
+  
