@@ -101,7 +101,26 @@ Design of an circuit
       <table>
         <td>V<sub>ocm</sub>maxswing = 1.17V</td>
       </table>
-    - simulation
-    - 
+ - simulation
       
+      ![Image](https://github.com/user-attachments/assets/5019afc3-c582-403e-b1ae-2bf3fe4e3e52)
+   - we can verify by the graph
+   - the wave is starting from 1.325V and reached till 2.498V
+   - therefore 2.948 - 1.325 = 1.173V which is equal to the calculated value V<sub>ocm</sub>maxswing.
+- AC Analysis:
+- we got A<sub>v</sub> = -4.99V/V
+- A<sub>vdB</sub> = 20log(A<sub>v</sub>)
+- A<sub>vdB</sub> = 20log(4.99)
+  <table>
+    <td>A<sub>vdB</sub> = 13.96 dB</td>
+  </table>
+- we need to calculate 3dB gain
+- 3dB gain = A<sub>vdB</sub> - 3dB
+- 3dB gain = 13.96 - 3
+  <table>
+    <td>3dB gain = 10.96 ~ 11dB</td>
+  </table>
+- Simulation
+- 
+
     
