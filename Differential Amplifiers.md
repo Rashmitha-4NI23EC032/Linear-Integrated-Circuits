@@ -23,12 +23,42 @@ Analysis:
 - with Rss resistane.
 ![Image](https://github.com/user-attachments/assets/c5e56122-7782-4d77-84b5-f03c9e4f847d)
 Design of an circuit
-Assume M1 and M2 are perfectly identical
-Vicm1 = Vicm2 = Vicm
-R<sub>D1</sub> = R<sub>D2</sub> = R<sub>D</sub>
-I<sub>D1</sub> = I<sub>D2</sub> = I<sub>ss</sub>/2
-V<sub>GS1</sub> = V<sub>GS2</sub> =V<sub>GS</sub>
-Vicm = Vp + V<sub>GS</sub>
-1.3 = 0.5 + V<sub>GS</sub>
-1.3-0.5 = V<sub>GS</sub>
-
+- Assume M1 and M2 are perfectly identical
+- Vicm1 = Vicm2 = Vicm
+- R<sub>D1</sub> = R<sub>D2</sub> = R<sub>D</sub>
+- I<sub>D1</sub> = I<sub>D2</sub> = I<sub>ss</sub>/2
+- V<sub>GS1</sub> = V<sub>GS2</sub> =V<sub>GS</sub>
+- V<sub>ocm1</sub> = V<sub>ocm2</sub> = V<sub>ocm</sub> = 1.4V
+- Vicm = Vp + V<sub>GS</sub>
+  - 1.3 = 0.5 + V<sub>GS</sub>
+  - 1.3-0.5 = V<sub>GS</sub>
+- <table>
+  <td>V<sub>GS</sub> = 0.8V</td>
+  </table>
+  we can conclude that V<sub>GS</sub> >= V<sub>th</sub> , M1 and M2 are in ON state 
+ - Given P = 3mW we can calucalate I<sub>ss</sub>
+  - I<sub>ss</sub> = P/V<sub>DD</sub>
+    - I<sub>ss</sub> = 3mW/2.5V
+    - I<sub>ss</sub> = 1.2mA
+    - we known that I<sub>D</sub> = I<sub>ss</sub>/2 = 1.2mA/2
+     <table>
+      <td>I<sub>D</sub> = 0.6mA</td>
+      </table>
+- Rss = Vp/I<sub>ss</sub> = 0.5/1.2m
+    <table>
+     <td>R<sub>ss</sub> = 0.416K</td>
+     </table>
+- V<sub>ocm</sub> = V<sub>DD</sub> - I<sub>D</sub>*R<sub>D</sub>
+- R<sub>D</sub> = (V<sub>DD</sub> - V<sub>ocm</sub>)/I<sub>D</sub>
+  - R<sub>D</sub> = (2.5 - 1.4)/0.6m
+   <table>
+    <td>R<sub>D</sub> = 1.833K</td>
+    </table>
+- we can conclude V<sub>ocm</sub> >= V<sub>GS</sub> - V<sub>th</sub>
+   - V<sub>ocm</sub> = 0.8 - 0.36
+     <table>
+       <td>V<sub>ocm</sub> >= 0.44V</td>
+     </table>
+     therefore M1 and M2 are in saturation region 
+- simulation
+  
