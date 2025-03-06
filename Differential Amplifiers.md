@@ -275,8 +275,9 @@ Design of an circuit
   3dB bandwidth will be 21.56 GHz
 ## Circuit 3
 - The R<sub>D</sub> resistances are replaced by the diode connected PMOS.This diode connected MOS will be always in the saturation region.
-  **DC Analysis**
   
+  ![Image](https://github.com/user-attachments/assets/a9708137-5a58-4279-b62d-cfaecb450e91)
+  **DC Analysis**
   
   
     
