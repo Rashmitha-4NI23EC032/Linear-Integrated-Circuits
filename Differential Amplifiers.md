@@ -278,6 +278,158 @@ Design of an circuit
   
   ![Image](https://github.com/user-attachments/assets/a9708137-5a58-4279-b62d-cfaecb450e91)
   **DC Analysis**
+  ![Image](https://github.com/user-attachments/assets/665f4563-be2c-4e60-b624-30b34cff7764)
+  **Transient Analysis**
+
+
+
+
+  ## Result
+  **With respect to the V<sub>icm</sub>**
+  <table>
+     <tr>
+        <td>V<sub>icm</sub> (V)</td>
+        <td>V<sub>ocm</sub> (V)</td>
+        <td>I<sub>D</sub> (mA)</td>
+        <td>V<sub>p</sub> (V)</td>
+        <td>I<sub>ss</sub> (mA)</td>
+        <td>A<sub>v</sub> (V/V)</td>
+       <td>Observations</td>
+     </tr>
+     <tr>
+       <td>0.8</td>
+       <td>2.12</td>
+       <td>0.207</td>
+       <td>0.172</td>
+       <td>0.41443</td>
+       <td>4.069</td>
+       <td> a) the V<sub>ocm</sub> will increase.
+      b) the I<sub>D</sub> will decrease.
+      c) the A<sub>v</sub> will decrease.
+      d) the total current I<sub>ss</sub> will decrease.
+      e) the nodal voltage Vp will decrease.</td>
+     </tr>
+     <tr>
+       <td>1.3</td>
+       <td>1.4</td>
+       <td>0.6</td>
+       <td>0.5</td>
+       <td>1.2</td>
+       <td>5</td>
+       <td>It is as per the given question </td>
+     </tr>
+     <tr>
+       <td>1.8</td>
+       <td>0.894</td>
+       <td>0.875</td>
+       <td>0.728</td>
+       <td>1.751</td>
+       <td>2.799</td>
+       <td> 
+       a) the V<sub>ocm</sub> will decrease.
+       b) the I<sub>D</sub> will increase.
+       c) the A<sub>v</sub> will increase.
+       d) the total current I<sub>ss</sub> will increase.
+       e) the nodal voltage Vp will increase.</td>
+     </tr>
+  </table>
+
+**Comparision based on the obtained Values**
+  
+  <table>
+    <tr>
+      <td>Parameters</td>
+      <td> Calculated</td>
+      <td>Circuit 1 (with R<sub>ss</sub>)</td>
+      <td>Circuit 2 (with constant current source)</td>
+      <td>Circuit 3 (with NMOS)</td>
+      <td>Observation</td>
+    </tr>
+    <tr>
+      <td>V<sub>icm</sub></td>
+      <td>1.3V</td>
+      <td> 1.3V</td>
+      <td>1.3V</td>
+      <td>1.3V</td>
+      <td>As per the design </td>
+    </tr>
+    <tr>
+      <td>V<sub>ocm</sub></td>
+      <td> 1.4V</td>
+      <td>1.40V</td>
+       <td>1.4V</td>
+        <td>1.39901V</td>
+        <td><p>Its as per the simulation , if we need to increase the V<sub>ocm</sub> then either we need to decrease R<sub>D</sub> or I<sub>D</sub> , if we need to decrease the V<sub>ocm</sub> then either we need to **increase R<sub>D</sub> or I<sub>D</sub></p></td>
+    </tr>
+    <tr>
+      <td>V<sub>p</sub></td>
+      <td>0.5V</td>
+      <td>0.5V</td>
+      <td>0.5V</td>
+      <td>0.5748V</td>
+      <td><p>It's Nodal  Voltage due to replacement of MOSFET its value </p></td>
+    </tr>
+    <tr>
+      <td>I<sub>D</sub></td>
+      <td>0.6mA</td>
+      <td>0.599mA</td>
+      <td>0.6mA</td>
+      <td>0.6mA</td>
+      <td>If I<sub>D</sub> has to be incresed then we need to decrease the Aspect Ratio(W/L).If I<sub>D</sub> has to be decreased then we need to increase the Aspect Ratio(W/L).
+      </td>
+    </tr>
+    <tr>
+      <td>I<sub>ss</sub></td>
+      <td>1.2mA</td>
+      <td>1.198mA</td>
+      <td>1.2mA</td>
+      <td>1.2mA</td>
+      <td>It's the total current flowing in the differential amplifier and its also called as <em>Tail Current</em></td>
+    </tr>
+    <tr>
+      <td>1.833KΩ</td>
+      <td>1.8337kΩ</td>
+      <td>1.83333KΩ</td>
+      <td>1.8337kΩ</td>
+      <td>AS we need to set the V<sub>ocm</sub> as per that the R<sub>D</sub> values has Changed.</td>
+    </tr>
+    <tr>
+      <td>g<sub>m</sub></td>
+      <td>2.77mS</td>
+      <td>2.47mS</td>
+      <td>2.47mS</td>
+      <td>3.3551mS</td>
+      <td><p>From calculation the g<sub>m</sub>has been decreased due to differ in the V<sub>th</sub> value.The g<sub>m</sub> value has been increased due to decrease in the V<sub>ov</sub></p></td>
+    </tr>
+    <tr>
+      <td>A<sub>vdm</td>
+        <td>-4.99V/V</td>
+        <td>-4.528 V/V</td>
+        <td> -4.528 V/V</td>
+        <td> -6.14 V/V</td>
+        <td><p>The is differ from the calculated value because change in the g<sub>m</sub> value .The gain has increased because  the MOSFET acts like a very high impedance load, leading to a larger voltage swing across the drain.</p></td>
+    </tr>
+        <tr>
+          <td>Gain in dB scale(20log(A<sub>vdm</sub>) </td>
+          <td>13.96dB</td>
+          <td>13.18dB</td>
+          <td>13.18dB</td>
+          <td>15.76dB</td>
+          <td>We can see variation because the gain has been increased</td>
+        </tr>
+        <tr>
+          <td>Bandwidth</td>
+          <td>-</td>
+          <td>19.433GHz</td>
+          <td>19.433GHz</td>
+          <td>21.56GHz</td>
+          <td><p> When compare to Resistor and constant current source the Mosfet Bandwidth has been increased because the MOSFET's high input impedance it reduces the loading effect, allowing for a wider range of frequencies to get amplified without any signal distortion. </p></td>
+        </tr>
+         </table>
+        
+## Inference
+- 
+
   
   
     
