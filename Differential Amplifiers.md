@@ -189,6 +189,7 @@ Design of an circuit
 - From the graph the gain is 13.180 dB
 - The 3 dB bandwidth will be 19.433 GHz 
 ## Circuit 2 
-- Resistance is replaced by the constant current source 
+- Resistance is replaced by the constant current source
+- 
 
     
