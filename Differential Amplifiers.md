@@ -203,5 +203,11 @@ Design of an circuit
      <td>A<sub>vdm</sub> = 4.528V/V</td>
      </table>
 - Do the same procedure for finding out the Max and Min swing.
-- 
+  ![Image](https://github.com/user-attachments/assets/e61d9c1c-845d-4525-9347-07a08ca5fd86)
+  -  the wave is starting from 1.325V and reached till 2.498V
+ - therefore 2.948 - 1.325 = 1.173V which is equal to the calculated value V<sub>ocm</sub>maxswing.
+   **AC Analysis**
+   -  Do the same procedure done for circuit 1
+   -  
+  
     
