@@ -194,6 +194,9 @@ Design of an circuit
   - The constant current source ideally it has infinte resistance.
   - For same designed values design the circuit.
 **DC Oprating point**
-
+![Image](https://github.com/user-attachments/assets/3916ab46-888e-4900-a91a-4684ad38d030)
+**AC Analysis**
+- Do the same procedure done for circuit 1
+- 
 
     
