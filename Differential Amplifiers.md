@@ -63,9 +63,17 @@ Design of an circuit
 - simulation
   
  ![Image](https://github.com/user-attachments/assets/37c92734-d5be-43e2-b53c-eb0a679c2308)
-## when the V<sub>icm</sub> level is 500mV lesser than the given value
+## when the V<sub>icm</sub> level is 500mV lesser than the given value(1.3V)
 - V<sub>icm</sub> will be 1.3 - 0.5 = 0.8V
-- 
+  
+ ![Image](https://github.com/user-attachments/assets/96e979e6-d505-410b-ae62-f302f748309d)
+
+- We can conculde that when we decrease the V<sub>icm</sub> then 
+    -  the **V<sub>ocm</sub>** will increase.
+    -  the **I<sub>D</sub>** will decrease.
+    -  the **A<sub>v</sub>** will decrease.
+## when the V<sub>icm</sub> level is 500mV greater than the given value(1.3V)
+ 
   - Transisent Analysis:
   - A<sub>v</sub> = -g<sub>m</sub>*R<sub>D</sub>
     - g<sub>gm</sub> = (2*I<sub>D</sub>)/(V<sub>GS</sub> - V<sub>th</sub> )
