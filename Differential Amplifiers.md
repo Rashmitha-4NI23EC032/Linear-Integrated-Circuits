@@ -248,10 +248,13 @@ Design of an circuit
   ![Image](https://github.com/user-attachments/assets/343f67ae-fbcc-4eb3-bbb4-2364e5d0c44c)
                
 - **when V<sub>icm</sub> < 0.94V**
-- ![Image](https://github.com/user-attachments/assets/a0e09b35-2d1f-4462-bae4-f44d9b4eb941)
-- In this simulation the amplitude is 50mV but aslo we won't get proper symmetrical wave.
-- **When V<sub>icm</sub> > 1.78V**
-- 
-  
+ ![Image](https://github.com/user-attachments/assets/a0e09b35-2d1f-4462-bae4-f44d9b4eb941)
+   - In this simulation the amplitude is 50mV but aslo we won't get proper symmetrical wave.
+ - **When V<sub>icm</sub> > 1.768V**
+ ![Image](https://github.com/user-attachments/assets/cc79cfae-4527-4679-abc4-f772b3608c85)
+  - We can conclude that when we apply signals greater than the 1.768V the signals will get distroted.
+- Therefore first we find out the range of the V<sub>icm</sub> and then apply the max input swing to get max output symetrical swing.
+- To find out the differential gain i.e A<sub>vdm</sub>:
+   
   
     
