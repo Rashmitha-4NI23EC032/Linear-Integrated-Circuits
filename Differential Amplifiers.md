@@ -73,6 +73,7 @@ Design of an circuit
     -  the **I<sub>D</sub>** will decrease.
     -  the **A<sub>v</sub>** will decrease.
 ## when the V<sub>icm</sub> level is 500mV greater than the given value(1.3V)
+
  
   - Transisent Analysis:
   - A<sub>v</sub> = -g<sub>m</sub>*R<sub>D</sub>
