@@ -89,17 +89,38 @@ Design of an circuit
      <tr>
         <td>V<sub>icm</sub> (V)</td>
         <td>V<sub>ocm</sub> (V)</td>
-        <td>I<sub>D</sub> (A)</td>
+        <td>I<sub>D</sub> (mA)</td>
         <td>V<sub>p</sub> (V)</td>
-        <td>I<sub>ss</sub> (A)</td>
-        <td>A<sub>v</sub></td>
+        <td>I<sub>ss</sub> (mA)</td>
+        <td>A<sub>v</sub> (V/V)</td>
      </tr>
      <tr>
        <td>0.8</td>
-       <td></td>
+       <td>2.12</td>
+       <td>0.207</td>
+       <td>0.172</td>
+       <td>0.41443</td>
+       <td>4.069</td>
+     </tr>
+     <tr>
+       <td>1.3</td>
+       <td>1.4</td>
+       <td>0.6</td>
+       <td>0.5</td>
+       <td>1.2</td>
+       <td>5</td>
+     </tr>
+     <tr>
+       <td>1.8</td>
+       <td>0.894</td>
+       <td>0.875</td>
+       <td>0.728</td>
+       <td>1.751</td>
+       <td>2.799</td>
      </tr>
   </table>
-  - Transisent Analysis:
+  
+- **Transisent Analysis:**
   - A<sub>v</sub> = -g<sub>m</sub>*R<sub>D</sub>
     - g<sub>gm</sub> = (2*I<sub>D</sub>)/(V<sub>GS</sub> - V<sub>th</sub> )
     - g<sub>gm</sub> = (2*0.6m)/(0.8-0.36)
@@ -143,16 +164,22 @@ Design of an circuit
    - we can verify by the graph
    - the wave is starting from 1.325V and reached till 2.498V
    - therefore 2.948 - 1.325 = 1.173V which is equal to the calculated value V<sub>ocm</sub>maxswing.
-- AC Analysis:
-- we got A<sub>v</sub> = -4.99V/V
-- A<sub>vdB</sub> = 20log(A<sub>v</sub>)
-- A<sub>vdB</sub> = 20log(4.99)
+  
+**Range of an V<sub>icm</sub>**
+  <table>
+    <td>V<sub>GS1</sub> + Vp <= V<sub>icm</sub> <= min(V<sub>DD</sub> - (I<sub>D</sub>*R<sub>D</sub>) + V<sub>th</sub> , V<sub>DD</sub>(when one mosfet is off))</td>
+  </table>
+      
+- **AC Analysis:**
+  - we got A<sub>v</sub> = -4.99V/V
+  - A<sub>vdB</sub> = 20log(A<sub>v</sub>)
+  - A<sub>vdB</sub> = 20log(4.99)
   <table>
     <td>A<sub>vdB</sub> = 13.96 dB</td>
   </table>
-- we need to calculate 3dB gain
-- 3dB gain = A<sub>vdB</sub> - 3dB
-- 3dB gain = 13.96 - 3
+  - we need to calculate 3dB gain
+  - 3dB gain = A<sub>vdB</sub> - 3dB
+  - 3dB gain = 13.96 - 3
   <table>
     <td>3dB gain = 10.96 ~ 11dB</td>
   </table>
@@ -161,14 +188,7 @@ Design of an circuit
  ![Image](https://github.com/user-attachments/assets/2cc56e65-1255-42f5-8fa3-2e9352151be6)
 - From the graph the gain is 13.180 dB
 - The 3 dB bandwidth will be 19.433 GHz 
-## Analysis
-- When we change the magnitude of V<sub>icm1</sub> = V<sub>icm2</sub> = V<sub>icm</sub>
-  <table>
-    <td>V<sub>icm</sub> (V)</td>
-    <td>V<sub>ocm</sub> (V)</td>
-    <td>I<sub>D</sub> (A)</td>
-    <td>V<sub>p</sub> (V)</td>
-    <td>I<sub>ss</sub> (A)</td>
-  </table>
+## Circuit 2 
+- Resistance is replaced by the constant current source 
 
     
