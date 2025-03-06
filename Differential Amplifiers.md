@@ -190,6 +190,10 @@ Design of an circuit
 - The 3 dB bandwidth will be 19.433 GHz 
 ## Circuit 2 
 - Resistance is replaced by the constant current source
-- 
+  ![Image](https://github.com/user-attachments/assets/3c3adc1b-daeb-4c36-b447-1d6a2177e7bf)
+  - The constant current source ideally it has infinte resistance.
+  - For same designed values design the circuit.
+**DC Oprating point**
+
 
     
