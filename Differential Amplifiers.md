@@ -285,7 +285,7 @@ Design of an circuit
 
 
   ## Result
-  **With respect to the V<sub>icm</sub>**
+  **With respect to the V<sub>icm</sub> with +- 0.5V**
   <table>
      <tr>
         <td>V<sub>icm</sub> (V)</td>
@@ -436,7 +436,7 @@ Design of an circuit
 - V<sub>icm</sub> must be within the range that keeps both input transistors ON and in saturation.
 - Larger Amplitude Causes Early Distortion i.e at higher ampltitude transistor reaches triode or cutoff region , so we need to apply V<sub>icm</sub> within the calculated range.
 - We need design the baised voltage i.e V<sub>b</sub> as such the NMOS 3 will operate in the saturation region .
--  <p>V<sub>GS1</sub> + V<sub>ov3</sub> <= V<sub>icm</sub> <= min(V<sub>DD</sub> - (I<sub>D</sub>*R<sub>D</sub>) + V<sub>th</sub> , V<sub>DD</sub>(when one mosfet is off)) this the Range calculation of V<sub>icm</sub></p>
+-  <p>V<sub>GS1</sub> + V<sub>ov3</sub> <= V<sub>icm</sub> <= min(V<sub>DD</sub> - (I<sub>D</sub>*R<sub>D</sub>) + V<sub>th</sub> , V<sub>DD</sub>(when one mosfet is off)) this the Range calculation of V<sub>icm</sub>.</p>
 
 
 
