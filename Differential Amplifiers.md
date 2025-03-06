@@ -72,9 +72,27 @@ Design of an circuit
     -  the **V<sub>ocm</sub>** will increase.
     -  the **I<sub>D</sub>** will decrease.
     -  the **A<sub>v</sub>** will decrease.
+    -  the total current **I<sub>ss</sub>** will decrease.
+    -  the nodal voltage **Vp** will decrease.
 ## when the V<sub>icm</sub> level is 500mV greater than the given value(1.3V)
+- V<sub>icm</sub> will be 1.3 + 0.5 = 1.8V
 
- 
+ ![Image](https://github.com/user-attachments/assets/dbb2a5e4-2265-4180-b443-ade10b6fff96)
+
+  - We can conculde that when we increase the V<sub>icm</sub> then
+      -  the **V<sub>ocm</sub>** will decrease.
+      -  the **I<sub>D</sub>** will increase.
+      -  the **A<sub>v</sub>** will increase.
+      -  the total current **I<sub>ss</sub>** will increase.
+      -  the nodal voltage **Vp** will increase.
+   <table>
+    <td>V<sub>icm</sub> (V)</td>
+    <td>V<sub>ocm</sub> (V)</td>
+    <td>I<sub>D</sub> (A)</td>
+    <td>V<sub>p</sub> (V)</td>
+    <td>I<sub>ss</sub> (A)</td>
+     <td>A<sub>v</sub></td>
+  </table>
   - Transisent Analysis:
   - A<sub>v</sub> = -g<sub>m</sub>*R<sub>D</sub>
     - g<sub>gm</sub> = (2*I<sub>D</sub>)/(V<sub>GS</sub> - V<sub>th</sub> )
