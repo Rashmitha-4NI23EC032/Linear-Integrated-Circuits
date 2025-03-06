@@ -195,7 +195,7 @@ Design of an circuit
   - For same designed values design the circuit.
 **DC Oprating point**
 ![Image](https://github.com/user-attachments/assets/3916ab46-888e-4900-a91a-4684ad38d030)
-**Transisent Analysis**
+**Transient Analysis**
 - Do the same procedure done for circuit 1
  ![Image](https://github.com/user-attachments/assets/1f98b790-6d74-4352-bf7c-d5bfce50bd0e)
 - A<sub>vdm</sub> = 452.87mV/100mV
@@ -215,16 +215,26 @@ Design of an circuit
 - Resistance is replaced by the NMOS
 - In this circuit we need to desing the Basing Voltage V<sub>b</sub>.
 - For MOSFET 3 to operate in the saturation region.
-    - V<sub>GD</sub> <= V<sub>th</sub>
-    - V<sub>G</sub> - V<sub>D</sub> = V<sub>th</sub>
-    - V<sub>b</sub> = V<sub>th</sub> + V<sub>p</sub>
-    - V<sub>b</sub> = 0.366 - 0.5
+   - V<sub>GD</sub> <= V<sub>th</sub>
+   - V<sub>G</sub> - V<sub>D</sub> = V<sub>th</sub>
+   - V<sub>b</sub> = V<sub>th</sub> + V<sub>p</sub>
+   - V<sub>b</sub> = 0.366 + 0.5
      <table>
       <td>V<sub>b</sub> = 0.866V </td>
     </table> 
-    - Therefore we can conculde V<sub>GD</sub> <= V<sub>th</sub> it operates in the saturation region.
-    - V<sub>GS</sub> > V<sub>th</sub> (On state condition)
-    - V<sub>b</sub> > V<sub>th</sub> (V<sub>s</sub> = 0V)
-    And all the parameters will be same in the design.
-    
+  - Therefore we can conculde V<sub>GD</sub> <= V<sub>th</sub> it operates in the saturation region.
+  - V<sub>GS</sub> > V<sub>th</sub> (On state condition)
+  - V<sub>b</sub> > V<sub>th</sub> (V<sub>s</sub> = 0V)
+     And all the parameters will be same in the design.
+      
+    ![Image](https://github.com/user-attachments/assets/da280c0d-d08e-413e-a4b6-2a0a39b88abf)
+  **Transient Analysis**
+  **Range of an V<sub>icm</sub>**
+  <table>
+    <td>V<sub>GS1</sub> + V<sub>ov3</sub> <= V<sub>icm</sub> <= min(V<sub>DD</sub> - (I<sub>D</sub>*R<sub>D</sub>) + V<sub>th</sub> , V<sub>DD</sub>(when one mosfet is off))</td>
+  </table>
+  - V<sub>icm</sub> min = V<sub>GS1</sub> + V<sub>ov3</sub> 
+  - V<sub>icm</sub> min = 0.8 + 
+  - 
+  - 
     
