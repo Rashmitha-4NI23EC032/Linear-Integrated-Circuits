@@ -208,6 +208,23 @@ Design of an circuit
  - therefore 2.948 - 1.325 = 1.173V which is equal to the calculated value V<sub>ocm</sub>maxswing.
    **AC Analysis**
    -  Do the same procedure done for circuit 1
-   -  
-  
+     ![Image](https://github.com/user-attachments/assets/a005e315-1a63-446f-893b-28483de75615)
+  -  From the graph the gain is 13.180 dB
+  - The 3 dB bandwidth will be 19.433 GHz
+## Circuit 3
+- Resistance is replaced by the NMOS
+- In this circuit we need to desing the Basing Voltage V<sub>b</sub>.
+- For MOSFET 3 to operate in the saturation region.
+    - V<sub>GD</sub> <= V<sub>th</sub>
+    - V<sub>G</sub> - V<sub>D</sub> = V<sub>th</sub>
+    - V<sub>b</sub> = V<sub>th</sub> + V<sub>p</sub>
+    - V<sub>b</sub> = 0.366 - 0.5
+     <table>
+      <td>V<sub>b</sub> = 0.866V </td>
+    </table> 
+    - Therefore we can conculde V<sub>GD</sub> <= V<sub>th</sub> it operates in the saturation region.
+    - V<sub>GS</sub> > V<sub>th</sub> (On state condition)
+    - V<sub>b</sub> > V<sub>th</sub> (V<sub>s</sub> = 0V)
+    And all the parameters will be same in the design.
+    
     
