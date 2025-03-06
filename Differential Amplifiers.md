@@ -63,6 +63,9 @@ Design of an circuit
 - simulation
   
  ![Image](https://github.com/user-attachments/assets/37c92734-d5be-43e2-b53c-eb0a679c2308)
+## when the V<sub>icm</sub> level is 500mV lesser than the given value
+- V<sub>icm</sub> will be 1.3 - 0.5 = 0.8V
+- 
   - Transisent Analysis:
   - A<sub>v</sub> = -g<sub>m</sub>*R<sub>D</sub>
     - g<sub>gm</sub> = (2*I<sub>D</sub>)/(V<sub>GS</sub> - V<sub>th</sub> )
