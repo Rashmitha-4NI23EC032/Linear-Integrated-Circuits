@@ -244,8 +244,11 @@ Design of an circuit
 - Therefore <table>
                <td> 1.374V <= V<sub>icm</sub> <= 1.768V </td>
                </table> is the range for V<sub>icm</sub>
+  - when apply a max swing = (0.94 + 1.768)/2 = 1.35V (for 50mv)
+  ![Image](https://github.com/user-attachments/assets/343f67ae-fbcc-4eb3-bbb4-2364e5d0c44c)
                
 - **when V<sub>icm</sub> < 1.374V**
+- 
   
   
     
