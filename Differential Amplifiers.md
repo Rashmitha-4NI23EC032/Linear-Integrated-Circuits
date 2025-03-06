@@ -247,7 +247,7 @@ Design of an circuit
   - when apply a max swing = (0.94 + 1.768)/2 = 1.35V (for 50mv)
   ![Image](https://github.com/user-attachments/assets/343f67ae-fbcc-4eb3-bbb4-2364e5d0c44c)
                
-- **when V<sub>icm</sub> < 0.94V**
+ **when V<sub>icm</sub> < 0.94V**
  ![Image](https://github.com/user-attachments/assets/a0e09b35-2d1f-4462-bae4-f44d9b4eb941)
    - In this simulation the amplitude is 50mV but aslo we won't get proper symmetrical wave.
  - **When V<sub>icm</sub> > 1.768V**
@@ -255,6 +255,20 @@ Design of an circuit
   - We can conclude that when we apply signals greater than the 1.768V the signals will get distroted.
 - Therefore first we find out the range of the V<sub>icm</sub> and then apply the max input swing to get max output symetrical swing.
 - To find out the differential gain i.e A<sub>vdm</sub>:
-   
+  ![Image](https://github.com/user-attachments/assets/bbfd2bfd-1b54-497b-b9e3-119f4e4d2727)
+  - From the graph A<sub>vdm</sub> = (V<sub>ocm1</sub> - V<sub>ocm2</sub>)/(V<sub>icm1</sub> - V<sub>icm2</sub>)
+      - A<sub>vdm</sub> = 614.47mV/100mV
+        <table>
+          <td>A<sub>vdm</sub> = 6.14 V/V </td>
+        </table>
+**AC Analysis**
+- We have obtained gain from above analysis i.e 6.14V/V
+- contvert to dB scale = 20log(A<sub>vdm</sub>)
+- dB = 20log(6.14)
+<table>
+  <td>dB value is 15.763dB</td>
+</table>
+  - lets verify this with the graph
+  
   
     
