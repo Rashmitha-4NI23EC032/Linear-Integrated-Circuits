@@ -387,6 +387,7 @@ Design of an circuit
       <td>It's the total current flowing in the differential amplifier and its also called as <em>Tail Current</em></td>
     </tr>
     <tr>
+      <td>R<sub>D</sub>
       <td>1.833KΩ</td>
       <td>1.8337kΩ</td>
       <td>1.83333KΩ</td>
@@ -428,7 +429,20 @@ Design of an circuit
          </table>
         
 ## Inference
-- 
+- The differential amplifier circuit was successfully designed and analyzed.
+- Changing Vicm affects Vocm, ID, and gain (Av).
+- Replacing Rss with a constant current source improves circuit performance.
+- Using NMOS instead of a resistor improves stability and current sourcing capabilities.
+- V<sub>icm</sub> must be within the range that keeps both input transistors ON and in saturation.
+- Larger Amplitude Causes Early Distortion i.e at higher ampltitude transistor reaches triode or cutoff region , so we need to apply V<sub>icm</sub> within the calculated range.
+- We need design the baised voltage i.e V<sub>b</sub> as such the NMOS 3 will operate in the saturation region .
+-  <p>V<sub>GS1</sub> + V<sub>ov3</sub> <= V<sub>icm</sub> <= min(V<sub>DD</sub> - (I<sub>D</sub>*R<sub>D</sub>) + V<sub>th</sub> , V<sub>DD</sub>(when one mosfet is off)) this the Range calculation of V<sub>icm</sub></p>
+
+
+
+
+
+
 
   
   
