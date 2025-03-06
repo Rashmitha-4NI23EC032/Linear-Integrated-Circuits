@@ -195,8 +195,13 @@ Design of an circuit
   - For same designed values design the circuit.
 **DC Oprating point**
 ![Image](https://github.com/user-attachments/assets/3916ab46-888e-4900-a91a-4684ad38d030)
-**AC Analysis**
+**Transisent Analysis**
 - Do the same procedure done for circuit 1
+ ![Image](https://github.com/user-attachments/assets/1f98b790-6d74-4352-bf7c-d5bfce50bd0e)
+- A<sub>vdm</sub> = 452.87mV/100mV
+     <table>
+     <td>A<sub>vdm</sub> = 4.528V/V</td>
+     </table>
+- Do the same procedure for finding out the Max and Min swing.
 - 
-
     
