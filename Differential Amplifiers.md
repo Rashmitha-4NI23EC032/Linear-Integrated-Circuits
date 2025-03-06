@@ -222,6 +222,8 @@ Design of an circuit
      <table>
       <td>V<sub>b</sub> = 0.866V </td>
     </table> 
+    
+    ![Image](https://github.com/user-attachments/assets/5219edf7-0883-43ff-bf56-f508029dac0d)
   - Therefore we can conculde V<sub>GD</sub> <= V<sub>th</sub> it operates in the saturation region.
   - V<sub>GS</sub> > V<sub>th</sub> (On state condition)
   - V<sub>b</sub> > V<sub>th</sub> (V<sub>s</sub> = 0V)
@@ -233,8 +235,17 @@ Design of an circuit
   <table>
     <td>V<sub>GS1</sub> + V<sub>ov3</sub> <= V<sub>icm</sub> <= min(V<sub>DD</sub> - (I<sub>D</sub>*R<sub>D</sub>) + V<sub>th</sub> , V<sub>DD</sub>(when one mosfet is off))</td>
   </table>
-  - V<sub>icm</sub> min = V<sub>GS1</sub> + V<sub>ov3</sub> 
-  - V<sub>icm</sub> min = 0.8 + 
-  - 
-  - 
+ - V<sub>icm</sub> min = V<sub>GS1</sub> + V<sub>ov3</sub> 
+  - V<sub>icm</sub> min = 0.8 + 0.574
+  - V<sub>icm</sub> min = 1.374V
+ - V<sub>icm</sub> max = (V<sub>DD</sub> - (I<sub>D</sub>*R<sub>D</sub>) + V<sub>th</sub>
+   - V<sub>icm</sub> max = (2.5 - (0.6*1.83) + 0.366
+   - V<sub>icm</sub> max = 1.768V
+- Therefore <table>
+               <td> 1.374V <= V<sub>icm</sub> <= 1.768V </td>
+               </table> is the range for V<sub>icm</sub>
+               
+- **when V<sub>icm</sub> < 1.374V**
+  
+  
     
