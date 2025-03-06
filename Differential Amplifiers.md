@@ -86,12 +86,18 @@ Design of an circuit
       -  the total current **I<sub>ss</sub>** will increase.
       -  the nodal voltage **Vp** will increase.
    <table>
-    <td>V<sub>icm</sub> (V)</td>
-    <td>V<sub>ocm</sub> (V)</td>
-    <td>I<sub>D</sub> (A)</td>
-    <td>V<sub>p</sub> (V)</td>
-    <td>I<sub>ss</sub> (A)</td>
-     <td>A<sub>v</sub></td>
+     <tr>
+        <td>V<sub>icm</sub> (V)</td>
+        <td>V<sub>ocm</sub> (V)</td>
+        <td>I<sub>D</sub> (A)</td>
+        <td>V<sub>p</sub> (V)</td>
+        <td>I<sub>ss</sub> (A)</td>
+        <td>A<sub>v</sub></td>
+     </tr>
+     <tr>
+       <td>0.8</td>
+       <td></td>
+     </tr>
   </table>
   - Transisent Analysis:
   - A<sub>v</sub> = -g<sub>m</sub>*R<sub>D</sub>
