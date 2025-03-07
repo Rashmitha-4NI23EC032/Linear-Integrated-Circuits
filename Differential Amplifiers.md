@@ -273,7 +273,7 @@ Design of an circuit
   ![Image](https://github.com/user-attachments/assets/9c76c677-adb3-4881-9b6b-7bfe723ffcf5)
   3dB will be 12.76dB
   3dB bandwidth will be 21.56 GHz
-## Circuit 3
+## Circuit 4
 - The R<sub>D</sub> resistances are replaced by the diode connected PMOS.This diode connected MOS will be always in the saturation region.
   
   ![Image](https://github.com/user-attachments/assets/a9708137-5a58-4279-b62d-cfaecb450e91)
@@ -286,14 +286,14 @@ Design of an circuit
         <table>
           <td>A<sub>vdm</sub> = 1.83 V/V </td>
         </table>
-  **AC Analysis
+  **AC Analysis**
   ![Image](https://github.com/user-attachments/assets/a6c33d00-7d1c-4c84-94f6-e11521639fa6)
   contvert to dB scale = 20log(A<sub>vdm</sub>)
 - dB = 20log(1.83)
 <table>
   <td>dB value is 5.24dB</td>
 </table>
-- <p>In this circuit when I try to make all the MOSFET identical. The V<sub>ocm</sub>isnot matching with the design parameter it has be increased and the gain has reduced. /p>
+ <p>In this circuit when I try to make all the MOSFET identical. The V<sub>ocm</sub>isnot matching with the design parameter it has be increased and the gain has reduced. </p>
 
 
 
