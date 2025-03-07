@@ -287,7 +287,13 @@ Design of an circuit
           <td>A<sub>vdm</sub> = 1.83 V/V </td>
         </table>
   **AC Analysis
-  
+  ![Image](https://github.com/user-attachments/assets/a6c33d00-7d1c-4c84-94f6-e11521639fa6)
+  contvert to dB scale = 20log(A<sub>vdm</sub>)
+- dB = 20log(1.83)
+<table>
+  <td>dB value is 5.24dB</td>
+</table>
+- <p>In this circuit when I try </p>
 
 
 
