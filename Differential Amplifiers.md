@@ -278,7 +278,7 @@ Design of an circuit
   
   ![Image](https://github.com/user-attachments/assets/a9708137-5a58-4279-b62d-cfaecb450e91)
   **DC Analysis**
-  
+  ![Image](https://github.com/user-attachments/assets/c4c8ab0a-8d8c-4bba-9f19-3f2ba02baed7)
   **Transient Analysis**
 
 
