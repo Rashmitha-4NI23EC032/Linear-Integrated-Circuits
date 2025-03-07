@@ -293,7 +293,7 @@ Design of an circuit
 <table>
   <td>dB value is 5.24dB</td>
 </table>
-- <p>In this circuit when I try </p>
+- <p>In this circuit when I try to make all the MOSFET identical. The V<sub>ocm</sub>isnot matching with the design parameter it has be increased and the gain has reduced. /p>
 
 
 
