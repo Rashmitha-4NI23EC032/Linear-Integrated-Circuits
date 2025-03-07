@@ -280,7 +280,14 @@ Design of an circuit
   **DC Analysis**
   ![Image](https://github.com/user-attachments/assets/c4c8ab0a-8d8c-4bba-9f19-3f2ba02baed7)
   **Transient Analysis**
-
+![Image](https://github.com/user-attachments/assets/b67feec8-f102-4216-81ed-e0da8c5a981e)
+- From the graph A<sub>vdm</sub> = (V<sub>ocm1</sub> - V<sub>ocm2</sub>)/(V<sub>icm1</sub> - V<sub>icm2</sub>)
+      - A<sub>vdm</sub> = 183.47mV/100mV
+        <table>
+          <td>A<sub>vdm</sub> = 1.83 V/V </td>
+        </table>
+  **AC Analysis
+  
 
 
 
