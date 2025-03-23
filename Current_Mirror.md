@@ -25,3 +25,4 @@
 - PMOS current Mirroring
    - Uses: P-channel MOSFETs
    - The reference current is set using a diode-connected PMOS transistor, and another PMOS mirrors it.
+    ![Image](https://github.com/user-attachments/assets/8604949f-4987-418b-a266-61bbdc74d823)
