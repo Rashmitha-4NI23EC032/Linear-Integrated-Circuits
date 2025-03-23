@@ -1,11 +1,14 @@
-##  Current Mirror
+## Experiment 6
+**Design and analyse current mirror circut as ative load in amplifier circuit.**
+
+## Introduction 
+ **Current Mirror**
 <p>A current mirror circuit is a fundamental building block in analog electronics used to replicate a reference current with high accuracy. It is widely employed in biasing, active loads, and current sources in integrated circuits . The ideal current mirror maintains a stable output current regardless of variations in process, supply voltage, and temperature (PVT).</p>
 
 ## Principle of Operation
 <p>A basic current mirror consists of two matched  MOSFETs. The first transistor is configured to establish a reference current, and the second transistor mirrors this current by operating under the same conditions. However, practical current mirrors are affected by PVT variations, leading to deviations in the mirrored current.</p>
 
-![Image](https://github.com/user-attachments/assets/40c28843-6481-401d-9019-d5595e54c03a)
-
+![Image](https://github.com/user-attachments/assets/61062a24-8243-4a2a-a285-aed0eec6d201)
 - Challenges Due to PVT Variations
    - Process Variations (P): Differences in  fabrication leads to mismatches in transistor parameters.
    - Supply Voltage Variations (V): Fluctuations in the power supply alter the transistor’s operating points, making the output current unstable.
@@ -27,3 +30,5 @@
    - Uses: P-channel MOSFETs
    - The reference current is set using a diode-connected PMOS transistor, and another PMOS mirrors it.
     ![Image](https://github.com/user-attachments/assets/8604949f-4987-418b-a266-61bbdc74d823)
+## Simulation 
+
