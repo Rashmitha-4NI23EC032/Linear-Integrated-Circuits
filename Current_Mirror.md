@@ -20,7 +20,8 @@
    - Uses: N-channel MOSFETs
    - One NMOS transistor is diode-connected  to set the reference current.
    - Faster operation due to high electron mobility.
-    ![Image](https://github.com/user-attachments/assets/2c02ec6e-5197-41c7-8d38-57927a7e6fef)
+   
+   ![Image](https://github.com/user-attachments/assets/db56a389-6ed7-4f84-b9b5-922d562448a2)
    - Depend on the sizing parameters.
 - PMOS current Mirroring
    - Uses: P-channel MOSFETs
