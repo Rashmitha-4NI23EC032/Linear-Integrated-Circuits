@@ -50,4 +50,54 @@ I<sub>ref</sub>=I<sub>p</sub>=(I<sub>total</sub>)/2
 <td>I<sub>ref</sub>=I<sub>p</sub>=0.27mA</td>
 </table>
 
-![Image](https://github.com/user-attachments/assets/9b97f1b6-8c16-45cb-90f8-ac0348f00216)  
+![Image](https://github.com/user-attachments/assets/9b97f1b6-8c16-45cb-90f8-ac0348f00216)  ![Image](https://github.com/user-attachments/assets/92dda9af-d6bb-4973-8655-4f7277f4715e)
+ <table> 
+<tr>
+ <th><b>Parameters</b></th>
+ <th><b>MOSFET1</b></th>
+ <th><b>MOSFET2</b></th>
+ <th><b>MOSFET3</b></th>
+</tr>
+<tr>
+    <td>Model</td>
+    <td>CMOSP</td>
+    <td>CMOSP</td>
+    <td>CMOSN</td>
+</tr>
+<tr>
+    <td>Length</td>
+    <td>180nm</td>
+    <td>180nm</td>
+    <td>180nm</td>
+</tr>
+<tr>
+    <td> Width</td>
+    <td>70µm</td>
+    <td>70µm</td>
+    <td>100.0217999um</td>
+</tr>
+<tr>
+    <td>V<sub>th</sub></td>
+    <td> -0.507V</td>
+    <td> -0.507V</td>
+    <td> 0.496V</td>
+</tr>
+    <tr>
+      <td>Current(I)</td>
+      <td>  0.27mA </td>
+      <td>  0.270211mA </td>
+      <td> 0.270211mA </td>
+    </tr>
+    <tr>
+      <td>Supply Voltage</td>
+      <td> 1.8V</td>
+      <td> 1.8V</td>
+      <td> --- </td>
+    </tr>
+     <tr>
+      <td>Biased Voltage</td>
+      <td> --- </td>
+      <td> --- </td>
+      <td> 0.5697V</td>
+    </tr>
+</table>
