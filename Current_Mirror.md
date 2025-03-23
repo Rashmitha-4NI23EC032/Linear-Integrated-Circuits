@@ -1,3 +1,4 @@
+
 ## Experiment 6
 **Design and analyse current mirror circut as ative load in amplifier circuit.**
 
@@ -31,4 +32,4 @@
    - The reference current is set using a diode-connected PMOS transistor, and another PMOS mirrors it.
     ![Image](https://github.com/user-attachments/assets/8604949f-4987-418b-a266-61bbdc74d823)
 ## Simulation 
-
+Part A : <p>Design a current mirror circuit which has a gain of AV = -10V/V, power supply of Vdd = 1.8V, and power of P <= 1mW. Find reference current (Iref), output current (Id), and total current (Itotal). Perform DC and AC analysis for mirror ratio 1:1, 1:2.</p>
