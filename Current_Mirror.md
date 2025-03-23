@@ -4,6 +4,8 @@
 ## Principle of Operation
 <p>A basic current mirror consists of two matched  MOSFETs. The first transistor is configured to establish a reference current, and the second transistor mirrors this current by operating under the same conditions. However, practical current mirrors are affected by PVT variations, leading to deviations in the mirrored current.</p>
 
+![Image](https://github.com/user-attachments/assets/40c28843-6481-401d-9019-d5595e54c03a)
+
 - Challenges Due to PVT Variations
    - Process Variations (P): Differences in  fabrication leads to mismatches in transistor parameters.
    - Supply Voltage Variations (V): Fluctuations in the power supply alter the transistor’s operating points, making the output current unstable.
