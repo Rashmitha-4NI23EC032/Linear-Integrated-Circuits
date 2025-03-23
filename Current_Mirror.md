@@ -49,3 +49,5 @@ I<sub>ref</sub>=I<sub>p</sub>=(I<sub>total</sub>)/2
 <table>
 <td>I<sub>ref</sub>=I<sub>p</sub>=0.27mA</td>
 </table>
+
+![Image](https://github.com/user-attachments/assets/9b97f1b6-8c16-45cb-90f8-ac0348f00216)  
