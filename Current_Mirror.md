@@ -34,5 +34,18 @@
 ## Simulation 
 Part A : <p>Design a current mirror circuit which has a gain of AV = -10V/V, power supply of Vdd = 1.8V, and power of P <= 1mW. Find reference current (Iref), output current (Id), and total current (Itotal). Perform DC and AC analysis for mirror ratio 1:1, 1:2.</p>
 ![Image](https://github.com/user-attachments/assets/4fcd86ec-967b-4d96-98ed-6e4da85dbf7c)
-The MOSFET should be in saturation region 
-<tb>V1>V<sub>th</sub></tb>
+  -  The MOSFET should be in saturation region 
+<table>
+<td>V1>V<sub>th</sub></td>
+</table>
+i.e 0.5>0.366
+ 
+  -  I<sub>taotal</sub>=P/V<sub>dd</sub>
+<table>
+<td>I<sub>total</sub>=0.55mA</td>
+</table>
+I<sub>total</sub>=I<sub>ref</sub> + I<sub>p</sub>
+I<sub>ref</sub>=I<sub>p</sub>=(I<sub>total</sub>)/2
+<table>
+<td>I<sub>ref</sub>=I<sub>p</sub>=0.27mA</td>
+</table>
