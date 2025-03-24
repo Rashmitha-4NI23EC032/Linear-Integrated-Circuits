@@ -106,6 +106,8 @@ V<sub>out</sub> = 1.18143, which is nearly equal to V<sub>x</sub>  i.e  1.18498<
 I<sub>ref</sub> =0.27mA and I<sub>d</sub> = 0.270211 <br> There is small diviation due to Lamda Effect.
 
 **Transient Analysis**
-
-
+![Image](https://github.com/user-attachments/assets/caf81b29-cc6f-4c73-8199-200d1dddf341)
+The input voltage given for N-MOS is 0.5 and amplitude of 9mV with frequency of 1kHz. <br>
+Can observe the output voltage V<sub>out</sub> = 1.42V
+ **AC Analysis**
 
