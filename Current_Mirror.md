@@ -186,6 +186,7 @@ The frequency for this particular dB is 27.426MHz, the bandwidth can be calculat
 = 27.426MHz - 1Hz <br>
 = 26.426MHz <br>
 ## Bonus Question 
+
 <ins>Observed Table</ins> <br>
 For I<sub>ref</sub> = 100u <br>
 
