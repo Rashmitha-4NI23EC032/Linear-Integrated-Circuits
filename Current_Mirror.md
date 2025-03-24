@@ -177,6 +177,16 @@ I<sub>ref</sub> =  0.185mA
 
 **Transient Analysis**
 ![Image](https://github.com/user-attachments/assets/ac0ea772-5f05-40d7-bad1-19edac3cab27)
+**AC Analysis**
 
+![Image](https://github.com/user-attachments/assets/4e4c277d-b1dc-49bb-b455-00c224e7fc59)
+The obtained gain from the simulation is 29.23<sub>dB</sub>. <br>
+29.23 - 3 = 26.23<sub>dB</sub>. <br>
+The frequency for this particular dB is 27.426MHz, the bandwidth can be calculated as f<sub>H</sub> - f<sub>L</sub>. <br>
+= 27.426MHz - 1Hz <br>
+= 26.426MHz <br>
+
+## Part B
+<b>Design the differential amplifier using the same design specification as experiment 3(differential amplifier). Perform DC, Transient, AC analysis for this.</b> <br>
 
 
