@@ -191,4 +191,6 @@ The frequency for this particular dB is 27.426MHz, the bandwidth can be calculat
 
 ![Image](https://github.com/user-attachments/assets/7b197f26-3a70-479d-8e32-ee017eaa928e)
 **DC Analysis**
+![Image](https://github.com/user-attachments/assets/7833efce-2fe1-42f1-9aa8-cca3333b25be)
+**Transient Analysis**
 
