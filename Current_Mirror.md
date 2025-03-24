@@ -185,6 +185,61 @@ The obtained gain from the simulation is 29.23<sub>dB</sub>. <br>
 The frequency for this particular dB is 27.426MHz, the bandwidth can be calculated as f<sub>H</sub> - f<sub>L</sub>. <br>
 = 27.426MHz - 1Hz <br>
 = 26.426MHz <br>
+## Bonus Question 
+<ins>Observed Table</ins> <br>
+For I<sub>ref</sub> = 100u <br>
+
+  <table> 
+<tr>
+ <th><b>I<sub>out(expected)</sub>(A)</b></th>
+ <th><b>I<sub>out(appeared)</sub>(A)</b></th>
+ <th><b>(W/L)<sub>2</sub>(m)</b></th>
+ <th><b>(W/L)<sub>1</sub>(m)</b></th>
+ <th><b>V<sub>x</sub>(V)</b></th>
+ <th><b>V<sub>out</sub>(V)</b></th>
+</tr>
+<tr>
+    <td>100µ</td>
+    <td>103.06µ</td>
+    <td>(180n/180n)</td>
+    <td>(180n/180n)</td>
+    <td>1.275V</td>
+    <td>1.71512V</td>
+</tr>
+<tr>
+    <td>100µ</td>
+    <td>100.7µ</td>
+    <td>(500n/500n)</td>
+    <td>(500n/500n)</td>
+    <td>1.4385V</td>
+    <td>1.717V</td>
+</tr>
+<tr>
+    <td>100µ</td>
+    <td>100.648µ</td>
+    <td>(1µ/1µ)</td>
+    <td>(1µ/1µ)</td>
+    <td>1.39827V</td>
+    <td>1.717V</td>
+</tr>
+<tr>
+    <td>200µ</td>
+    <td>197.637µ</td>
+    <td>(1µ/1µ)</td>
+    <td>(1µ/2µ)</td>
+    <td>1.39727V</td>
+    <td>1.63734V</td>
+</tr>
+    <tr>
+      <td>50µ</td>
+    <td>52.1312µ</td>
+    <td>(1µ/1µ)</td>
+    <td>(1µ/0.5µ)</td>
+    <td>1.3972V</td>
+    <td>1.75725V</td>
+    </tr>
+   
+</table> 
 
 ## Part B
 <b>Design the differential amplifier using the same design specification as experiment 3(differential amplifier). Perform DC, Transient, AC analysis for this.</b> <br>
@@ -195,4 +250,7 @@ The frequency for this particular dB is 27.426MHz, the bandwidth can be calculat
 **Transient Analysis**
 ![Image](https://github.com/user-attachments/assets/7a7e4b76-1c6a-4f2c-9185-b767e4045f97)
 **AC Analysis**
+![Image](https://github.com/user-attachments/assets/0e8cc948-4f91-45b8-8eef-55613092c065)
+The gain of the circuit is 30.977dB.
+<br>BandWdith is 187.35MHz - 1Hz = 186.35MHz
 
