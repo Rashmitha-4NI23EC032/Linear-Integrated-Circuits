@@ -176,6 +176,7 @@ V<sub>out</sub> = 1.158341V
 I<sub>ref</sub> =  0.185mA
 
 **Transient Analysis**
+![Image](https://github.com/user-attachments/assets/ac0ea772-5f05-40d7-bad1-19edac3cab27)
 
 
 
