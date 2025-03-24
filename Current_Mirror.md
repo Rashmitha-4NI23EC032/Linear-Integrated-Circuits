@@ -118,7 +118,64 @@ The frequency for this particular dB is 58.237MHz, the bandwidth can be calculat
 = 58.237MHz - 1Hz <br>
 = 57.237MHz <br>
 ## For 1:2 Aspect Ratio
+ <table> 
+<tr>
+ <th><b>Parameters</b></th>
+ <th><b>MOSFET1</b></th>
+ <th><b>MOSFET2</b></th>
+ <th><b>MOSFET3</b></th>
+</tr>
+<tr>
+    <td>Model</td>
+    <td>CMOSP</td>
+    <td>CMOSP</td>
+    <td>CMOSN</td>
+</tr>
+<tr>
+    <td>Mosfet Length</td>
+    <td>180nm</td>
+    <td>180nm</td>
+    <td>180nm</td>
+</tr>
+<tr>
+    <td>Mosfet Width</td>
+    <td>70um</td>
+    <td>140µm</td>
+    <td>140u</td>
+</tr>
+<tr>
+    <td>Threshold Voltage</td>
+    <td> -0.509V</td>
+    <td> -0.509V</td>
+    <td> 0.495V</td>
+</tr>
+    <tr>
+      <td>Current(I)</td>
+      <td> I<sub>ref</sub> = 0.185mA </td>
+      <td> I<sub>d</sub> = 0.373554mA </td>
+      <td> I<sub>d</sub> = 0.373554</td>
+    </tr>
+    <tr>
+      <td>Supply Voltage</td>
+      <td> 1.8V</td>
+      <td> 1.8V</td>
+      <td> --- </td>
+    </tr>
+     <tr>
+      <td>Biased Voltage</td>
+      <td> --- </td>
+      <td> --- </td>
+      <td> 0.5V</td>
+    </tr>
+</table>
+
 <br>**DC Analysis**</br>
+![Image](https://github.com/user-attachments/assets/33a0610a-3d0d-4107-829a-96188918d8c4)
+From dc analysis: <br>
+V<sub>out</sub> = 1.158341V	 
+I<sub>ref</sub> =  0.185mA
+
+**Transient Analysis**
 
 
 
