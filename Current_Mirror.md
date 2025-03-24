@@ -32,6 +32,7 @@
    - The reference current is set using a diode-connected PMOS transistor, and another PMOS mirrors it.
     ![Image](https://github.com/user-attachments/assets/8604949f-4987-418b-a266-61bbdc74d823)
 ## Simulation 
+<br>**For 1:1 Aspect Ratio**</br>
 Part A : <p>Design a current mirror circuit which has a gain of AV = -10V/V, power supply of Vdd = 1.8V, and power of P <= 1mW. Find reference current (Iref), output current (Id), and total current (Itotal). Perform DC and AC analysis for mirror ratio 1:1, 1:2.</p>
 ![Image](https://github.com/user-attachments/assets/4fcd86ec-967b-4d96-98ed-6e4da85dbf7c)
   -  The MOSFET should be in saturation region 
@@ -110,4 +111,14 @@ I<sub>ref</sub> =0.27mA and I<sub>d</sub> = 0.270211 <br> There is small diviati
 The input voltage given for N-MOS is 0.5 and amplitude of 9mV with frequency of 1kHz. <br>
 Can observe the output voltage V<sub>out</sub> = 1.42V
  **AC Analysis**
+![Image](https://github.com/user-attachments/assets/d4cab0bb-1981-4f63-8ba8-557eb7cdd56f)
+The obtained gain A<sub>v</sub> is 29.488<sub>dB</sub>. <br>
+29.488 - 3 = 26.488<sub>dB</sub>. <br>
+The frequency for this particular dB is 58.237MHz, the bandwidth can be calculated as f<sub>H</sub> - f<sub>L</sub>. <br>
+= 58.237MHz - 1Hz <br>
+= 57.237MHz <br>
+## For 1:2 Aspect Ratio
+<br>**DC Analysis**</br>
+
+
 
