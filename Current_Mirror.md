@@ -78,9 +78,9 @@ I<sub>ref</sub>=I<sub>p</sub>=(I<sub>total</sub>)/2
 </tr>
 <tr>
     <td>V<sub>th</sub></td>
-    <td> -0.507V</td>
-    <td> -0.507V</td>
-    <td> 0.496V</td>
+    <td> -0.509V</td>
+    <td> -0.509V</td>
+    <td> 0.495V</td>
 </tr>
     <tr>
       <td>Current(I)</td>
@@ -101,3 +101,11 @@ I<sub>ref</sub>=I<sub>p</sub>=(I<sub>total</sub>)/2
       <td> 0.5697V</td>
     </tr>
 </table>
+From dc analysis: <br>
+V<sub>out</sub> = 1.18143, which is nearly equal to V<sub>x</sub>  i.e  1.18498</br>
+I<sub>ref</sub> =0.27mA and I<sub>d</sub> = 0.270211 <br> There is small diviation due to Lamda Effect.
+
+**Transient Analysis**
+
+
+
