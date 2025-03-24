@@ -4,9 +4,11 @@
 
 ## Introduction 
  **Current Mirror**
+ 
 <p>A current mirror circuit is a fundamental building block in analog electronics used to replicate a reference current with high accuracy. It is widely employed in biasing, active loads, and current sources in integrated circuits . The ideal current mirror maintains a stable output current regardless of variations in process, supply voltage, and temperature (PVT).</p>
 
 ## Principle of Operation
+
 <p>A basic current mirror consists of two matched  MOSFETs. The first transistor is configured to establish a reference current, and the second transistor mirrors this current by operating under the same conditions. However, practical current mirrors are affected by PVT variations, leading to deviations in the mirrored current.</p>
 
 ![Image](https://github.com/user-attachments/assets/61062a24-8243-4a2a-a285-aed0eec6d201)
@@ -32,6 +34,7 @@
    - The reference current is set using a diode-connected PMOS transistor, and another PMOS mirrors it.
     ![Image](https://github.com/user-attachments/assets/8604949f-4987-418b-a266-61bbdc74d823)
 ## Simulation 
+
 <br>**For 1:1 Aspect Ratio**</br>
 Part A : <p>Design a current mirror circuit which has a gain of AV = -10V/V, power supply of Vdd = 1.8V, and power of P <= 1mW. Find reference current (Iref), output current (Id), and total current (Itotal). Perform DC and AC analysis for mirror ratio 1:1, 1:2.</p>
 ![Image](https://github.com/user-attachments/assets/4fcd86ec-967b-4d96-98ed-6e4da85dbf7c)
@@ -107,10 +110,12 @@ V<sub>out</sub> = 1.18143, which is nearly equal to V<sub>x</sub>  i.e  1.18498<
 I<sub>ref</sub> =0.27mA and I<sub>d</sub> = 0.270211 <br> There is small diviation due to Lamda Effect.
 
 **Transient Analysis**
+
 ![Image](https://github.com/user-attachments/assets/caf81b29-cc6f-4c73-8199-200d1dddf341)
 The input voltage given for N-MOS is 0.5 and amplitude of 9mV with frequency of 1kHz. <br>
 Can observe the output voltage V<sub>out</sub> = 1.42V
  **AC Analysis**
+ 
 ![Image](https://github.com/user-attachments/assets/d4cab0bb-1981-4f63-8ba8-557eb7cdd56f)
 The obtained gain A<sub>v</sub> is 29.488<sub>dB</sub>. <br>
 29.488 - 3 = 26.488<sub>dB</sub>. <br>
@@ -170,12 +175,14 @@ The frequency for this particular dB is 58.237MHz, the bandwidth can be calculat
 </table>
 
 <br>**DC Analysis**</br>
+
 ![Image](https://github.com/user-attachments/assets/33a0610a-3d0d-4107-829a-96188918d8c4)
 From dc analysis: <br>
 V<sub>out</sub> = 1.158341V	 
 I<sub>ref</sub> =  0.185mA
 
 **Transient Analysis**
+
 ![Image](https://github.com/user-attachments/assets/ac0ea772-5f05-40d7-bad1-19edac3cab27)
 **AC Analysis**
 
@@ -187,6 +194,7 @@ The frequency for this particular dB is 27.426MHz, the bandwidth can be calculat
 = 26.426MHz <br>
 ## Bonus Question 
 
+![Image](https://github.com/user-attachments/assets/8af0aa43-3374-4ed9-be95-1fd4dbcbd5d4)
 <ins>Observed Table</ins> <br>
 For I<sub>ref</sub> = 100u <br>
 
@@ -246,12 +254,32 @@ For I<sub>ref</sub> = 100u <br>
 <b>Design the differential amplifier using the same design specification as experiment 3(differential amplifier). Perform DC, Transient, AC analysis for this.</b> <br>
 
 ![Image](https://github.com/user-attachments/assets/7b197f26-3a70-479d-8e32-ee017eaa928e)
+
 **DC Analysis**
+
+
 ![Image](https://github.com/user-attachments/assets/7833efce-2fe1-42f1-9aa8-cca3333b25be)
+
 **Transient Analysis**
+
 ![Image](https://github.com/user-attachments/assets/7a7e4b76-1c6a-4f2c-9185-b767e4045f97)
+
 **AC Analysis**
+
 ![Image](https://github.com/user-attachments/assets/0e8cc948-4f91-45b8-8eef-55613092c065)
+
 The gain of the circuit is 30.977dB.
 <br>BandWdith is 187.35MHz - 1Hz = 186.35MHz
 
+## Inference
+
+<br> 1.Current mirrors copy a reference current accurately, making them useful in many electronic circuits.</br>
+<br> 2.Changes in manufacturing, power supply, or temperature can affect performance, but using a stable reference current helps reduce these effects.</br>
+<br> 3.NMOS current mirrors work faster, while PMOS current mirrors provide better stability and accuracy.</br>
+<br> 4.Small errors occur due to transistor properties, but using longer transistors or special designs can fix this.</br>
+<br> 5.Larger transistor sizes improve accuracy, but they also take up more space on the chip.</br>
+<br> 6.DC analysis confirms the circuit is working correctly, with the mirrored current closely matching the expected values.</br>
+<br> 7.AC analysis shows the circuit has a high gain and wide frequency range, making it good for high-speed applications.</br>
+<br> 8.Transient analysis proves that the circuit responds well to changing signals, meaning it works reliably in real-world use.</br>
+<br> 9.Using current mirrors in amplifiers gives high gain (~31 dB) and wide bandwidth (~186 MHz), which is great for precise signal processing.</br>
+<br> 10.Choosing the right transistor size and reference current is important to get the best balance between power, accuracy, and performance.</br>
