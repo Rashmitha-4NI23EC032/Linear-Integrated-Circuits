@@ -50,4 +50,30 @@ The multivibrators are classified into three categories-
 ![Image](https://github.com/user-attachments/assets/1926d939-3b3b-4d6d-b7a7-3e9e763d83ea)
 
 **Case1**
+  ![Image](https://github.com/user-attachments/assets/43b9ea37-5d91-4512-822b-7d29324595fe)
   
+**Case2**
+![Image](https://github.com/user-attachments/assets/54b0b36b-b937-4d22-b4b3-fb1c4cf217b5)
+
+**Case 3**
+the ton<toff which is not possible in astable Multivibrator , thus we can use an inverter to invert the pulse generated.
+## Inference 
+Controlling ON and OFF Times Isn't Always Straightforward We saw that changing resistor and capacitor values lets us control how long the signal stays ON and OFF. But it’s not always possible to get any values we want with the basic 555 timer setup.
+
+The 555 Timer Has Its Limits In some cases (like when OFF time needs to be longer than ON), the normal 555 astable circuit can’t give us the result directly. That’s why in Case 3, we had to flip the signal using an inverter.
+
+Inverters Can Help Us Get the Waveform We Want By adding a simple NOT gate (built using a transistor), we were able to reverse the timing — this gave us more flexibility in generating the waveform we needed.
+
+Very Short Pulses Need Precise Components In Case 2, we worked with very fast pulses (just fractions of a millisecond). To do that, we needed low resistor and capacitor values — which also showed us the importance of accuracy and how component selection affects timing.
+
+We Can Detect Edges Using a Differentiator A differentiator circuit helped us catch the exact moment the signal goes from LOW to HIGH. This is useful when we only want to react to changes, not the full pulse.
+
+Monostable 555 Gives Clean, Consistent Pulses Finally, when we triggered a monostable 555 with those edges, we got clean, uniform pulses every time. This is super helpful when we need a reliable output regardless of input width.
+
+| **Case** | **Configuration** | **Observation** |
+|----------|-------------------|----------------------|
+| **Case 1**<br>(ON = 0.2 ms, OFF = 0.3 ms) | Direct astable 555 output | Basic control of ON/OFF time using R1, R2, and C values works well within certain timing ranges. |
+| **Case 2**<br>(ON = 0.1 ms, OFF = 0.05 ms) | High-speed pulse using small R and C | Fast switching is possible but requires precise low-value components. Useful for short pulse generation. |
+| **Case 3**<br>(ON = 0.3 ms, OFF = 0.4 ms)<br>with inverter | Inverter used after 555 output | Shows how logical inversion helps overcome 555 timer’s limitations, allowing ON < OFF timing. |
+## Simulation in Virtual Lab Astable Multivibrator
+
