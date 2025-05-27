@@ -6,7 +6,6 @@ Flash ADCs provide an excellent case study for applying analog principles such a
 This project concentrates on how each analog part of the 3-bit Flash ADC behaves in real hardware. We build and test a resistor-ladder network together with seven comparators and a digital encoder, confirming that the circuit works exactly as classroom theory in Linear Integrated Circuits (LIC) predicts. By turning these core LIC concepts into a working high-speed converter, the work clearly shows how solid analog principles can be transformed into a practical, reliable device, demonstrating both sound academic understanding and hands-on engineering skill.
 
 ## 	DESIGN OVERVIEW
-THE 3-BIT FLASH ANALOG-TO-DIGITAL CONVERTER (ADC) DESIGNED IN THIS PROJECT IS STRUCTURED INTO THREE PRINCIPAL STAGES: A RESISTOR LADDER NETWORK, A COMPARATOR ARRAY BASED ON LM393 ICS, AND A DIGITAL ENCODER USING THE 7418 IC. EACH STAGE PLAYS A CRUCIAL ROLE IN CONVERTING AN ANALOG INPUT SIGNAL INTO A CORRESPONDING 3-BIT DIGITAL OUTPUT WITH MINIMAL LATENCY AND HIGH ACCURACY, ALIGNED WITH THE CORE PRINCIPLES OF ANALOG CIRCUIT DESIGN TAUGHT IN LINEAR INTEGRATED CIRCUITS (LIC).
 **RESISTOR LADDER NETWORK**
 The resistor ladder network serves as a precision voltage divider that establishes seven discrete reference voltage levels across eight identical resistors, each valued at 680Ω. This ladder forms the foundation for comparator thresholding, producing evenly spaced voltage steps given by V_step = V_ref / 8. For a 5V reference, this results in voltage levels at approximately 0.625V increments, ranging from 0.625V to 4.375V. These voltages are tapped from the junctions of the resistors and fed directly into the inverting inputs of the comparator array.
  **Comparator Stage**
@@ -15,3 +14,11 @@ The heart of the analog comparison is handled by seven LM393 comparators. Each c
 The final stage involves converting the thermometer code into a 3-bit binary output. This is achieved using the SN7418 encoder, which prioritizes the highest-order active comparator signal and encodes it into the equivalent binary representation. The encoder simplifies the complex thermometer output into a standard digital form that can be easily interfaced with digital systems for further processing.
 This structured, analog-centered design effectively demonstrates the practical implementation of Flash ADC architecture using discrete components. By combining linear resistor-based voltage division, high-gain comparator behavior, and logic-level encoding, the 3-bit Flash ADC exemplifies how analog concepts from LIC theory can be translated into a working, real-time data conversion system
 ## Block Diagram 
+![Image](https://github.com/user-attachments/assets/4227263e-8092-42ae-beb2-7600348c173b)
+
+ - we have assumed the Power budget as 5 mW, V ref = 5V wkt  Iref= Vref / Rtotal
+ - Assume that the total ladder should have an impedance of 5kΩ
+ - Iref = 1mA , P = 5mW
+ - R = Rtotal / 2N
+ -  R = 625 Ω (Standard Value R= 680Ω)
+  ## Simulation 
