@@ -1,1 +1,14 @@
+## Abstract
+This paper compares two types of Operational Transconductance Amplifiers (OTAs): the Recycled Folded Cascode (RFC) OTA and the Miller Compensated OTA. The RFC OTA improves performance by reusing current inside the circuit, which helps achieve high gain and bandwidth without using much power. On the other hand, the Miller OTA uses two stages and a special capacitor (Miller capacitor) to make the circuit more stable, especially when driving large loads. Simulations show that the RFC OTA gives better gain and speed with lower power use, while the Miller OTA offers better stability and is easier to design for high load conditions. This comparison helps choose the right OTA for different analog circuit applications.
+## 	INTRODUCTION
+Operational Transconductance Amplifiers (OTAs) play a vital role in analog and mixed-signal integrated circuits, where gain, bandwidth, power efficiency, and stability are critical performance parameters. Among various OTA architectures, the Miller Compensated OTA and Recycled Folded Cascode (RFC) OTA have emerged as widely used designs due to their distinct advantages in different applications.
+The Miller Compensated OTA is a classical
+two-stage amplifier topology, known for its ability to achieve high gain while maintaining stability through the use of Miller compensation. It is often preferred in applications were driving large capacitive loads and achieving good phase margin are essential. However, this topology typically suffers from limited gain-bandwidth product (GBW) and slower transient response due to internal compensation.
+In contrast, the Recycled Folded Cascode OTA is a modified single-stage design that reuses the bias current and internal signal paths to enhance transconductance and gain without significantly increasing power consumption. This makes the RFC OTA well-suited for low-power and high- speed applications. By recycling current from internal nodes, it offers improved efficiency and bandwidth compared to traditional folded cascode or Miller architectures.
+This paper presents a detailed comparative study of both architectures in terms of key performance such as gain, GBW, phase margin, power consumption
+## 	DESIGN OVERVEIW
+**Recycled Folded Cascode OTA**
+The Recycled Folded Cascode OTA is based on a traditional folded cascode topology but includes additional transconductance paths and current- reuse techniques to enhance performance. In this architecture, the current from the folded cascode input stage is reused by a secondary gain-boosting path, effectively increasing the output resistance and overall gain. The recycling path improves the transconductance without a corresponding increase in power or area. This design is inherently single-stage, which provides wide bandwidth and better frequency response due to the absence of Miller compensation. It is particularly suited for low-voltage, low-power applications requiring high-speed operation.
+
+ 
 
