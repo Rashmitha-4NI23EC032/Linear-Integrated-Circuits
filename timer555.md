@@ -31,4 +31,10 @@ The multivibrators are classified into three categories-
   - It is also used in applications where a simple on/off switch is required.
   ## Design a Monostable Multivibrator with 555 Timer Circuit to generate pulse of width 0.5 ms using input triggers.
   **Case1**
+  ![Image](https://github.com/user-attachments/assets/2503eef2-c5eb-4726-834d-58a9636f07dc)
+
+  **Case2**
+
+
+  **Case3**
   
