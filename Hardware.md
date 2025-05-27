@@ -22,3 +22,34 @@ This structured, analog-centered design effectively demonstrates the practical i
  - R = Rtotal / 2N
  -  R = 625 Ω (Standard Value R= 680Ω)
   ## Simulation 
+![Image](https://github.com/user-attachments/assets/09d92177-bce4-4b91-a0c7-ceda457ec651)
+
+- To generate seven discrete reference voltages (V1 through V7) for the comparator inputs of a 3-bit Flash ADC, a resistor ladder network consisting of eight identical resistors (R) is used. The reference voltage (Vref) is assumed to be 5 V.
+- Total resistance across the ladder:
+- Rtotal=8×R
+- Voltage step across each node:
+- Vstep=Vref /8 = 0.625V
+- Using this step size, the individual node voltages are calculated as follows: V1=5×7/8=4.375V
+- V2=5×6/8=3.75V
+-  V3=5×5/8=3.125V
+-  V4=5×4/8=2.5V
+-  V5=5×3/8=1.875V
+-  V 6=5×2/8=1.25V
+-  V 7=5/8=0.625V
+  These voltages are supplied to the inverting terminals of the LM393 comparators. The analog input signal (Vin) is applied to the non-inverting terminals.
+## RESULT
+- For a 3-bit Flash ADC, there are 23=82^3 = 823=8 levels and 7 comparators. Assume reference voltages are spaced like this:
+- Let Vin = 2.8V Comparator	Reference Voltage (V)	Input > Ref?	Comparator Output
+-  C1	0.625	Yes	1
+-  C2	1.25	Yes	1
+-  C3	1.875	Yes	1
+-  C4	2.5	Yes	1
+-  C5	3.125	No	0
+- C6	3.75	No	0
+- C7	4.375	No	0
+- C1 to C4 will output 1 because 2.8V > 0.625V, 2.8V > 1.25V, 2.8V > 1.875V and 2.8V > 2.5V.
+- C5 to C7 will output 0 because 2.8V < 3.125 is False for C5, and the rest are higher.
+- So, the comparator outputs will be: 1 1 1 1 0 0
+ Therefore, the digital output would be 100 in binary 
+**Truth Table**
+  
