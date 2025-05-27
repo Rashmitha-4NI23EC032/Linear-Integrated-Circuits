@@ -46,5 +46,8 @@ The multivibrators are classified into three categories-
   **Circuit Diagram**
   ![Image](https://github.com/user-attachments/assets/6dfda79b-c236-429f-bc2c-40f6b9bad91f)
   ## Calculation 
-  
+  ![Image](https://github.com/user-attachments/assets/cec77012-85ce-417d-bb66-640ed8e89629)
+![Image](https://github.com/user-attachments/assets/1926d939-3b3b-4d6d-b7a7-3e9e763d83ea)
+
+**Case1**
   
