@@ -34,7 +34,15 @@ The multivibrators are classified into three categories-
   ![Image](https://github.com/user-attachments/assets/2503eef2-c5eb-4726-834d-58a9636f07dc)
 
   **Case2**
+![Image](https://github.com/user-attachments/assets/941f5eb9-e864-4bd2-802c-60faf93ffde3)
 
+**Case3**
 
-  **Case3**
+![Image](https://github.com/user-attachments/assets/7e1aa86c-16dd-4c00-adff-45d5da2802c9)
+
+  A monostable multivibrator generates a single, fixed-duration output pulse in response to a trigger, regardless of the trigger’s duration. The output pulse width is set by the circuit’s resistor-capacitor (RC) time constant. It responds only to the first valid trigger and ignores additional triggers during the output pulse period. This makes it ideal for timing applications, pulse shaping, and debouncing.
+
+  ## Astable multivibrator and monostable multivibrator using 555 timer IC
+  **Circuit Diagram**
+  
   
