@@ -31,6 +31,36 @@ consumed by them is also same 50uA.
 - The power supply voltage used is 1.2volts. So the power consumption is found to be
 - 𝑃𝑜𝑤𝑒𝑟𝑅𝐹𝐶 = 1.2 ∗ 𝐼𝑅𝐹𝐶
 - PowerRFC =480𝑢𝑊.
-
+## Result 
+ ![Image](https://github.com/user-attachments/assets/bdda4300-adc5-4425-bb90-74c1cdb0a292)
  
+**DC Gain**: The Miller OTA achieves the highest DC gain due to its two-stage architecture and Miller compensation. However, the EIRFC OTA shows significant gain improvement (62 dB) over the basic RFC due to positive feedback, making it suitable for high-resolution ADC applications.
+
+**Bandwidth**: The GBW of EIRFC (164 MHz) is substantially higher than both Miller (6.25 MHz) and RFC (1.8 MHz), proving the effectiveness of advanced folding and feedback techniques.
+
+**CMRR**: EIRFC offers a dramatic CMRR improvement (66 dB), nearly doubling that of Miller OTA estimates, by suppressing common-mode signals with feedback architecture.
+
+**Power Efficiency**: The RFC OTA is most power-efficient (400 µW), while the Miller OTA, although within 1 mW, uses more power. The EIRFC uses more current but offers better performance metrics.
+
+**Slew Rate**: The Miller OTA's slew rate is modest (10 µV/s), while EIRFC shows a dramatically higher slew rate (39.3 V/µs), crucial for high-speed analog applications.
+## Conlusion 
+**Enhanced Transconductance Efficiency**
+The recycled folded cascode OTA significantly improves transconductance  by reusing bias currents effectively, leading to better current efficiency compared to conventional designs.
+
+**Improved Gain and Bandwidth**
+By recycling currents through auxiliary paths, the OTA achieves higher DC gain and broader bandwidth, making it suitable for high-performance analog applications.
+
+**Low Power Consumption**
+The topology ensures lower power consumption without sacrificing performance, making it ideal for low-power analog signal processing circuits.
+
+**High Output Swing and CMRR**
+The design maintains a relatively high output voltage swing and common-mode rejection ratio, contributing to better linearity and signal integrity.
+
+**Compact and Area-Efficient**
+The recycled structure minimizes the need for additional current mirrors or gain stages, helping reduce silicon area in integrated circuits.
+
+**Suitability for Advanced Applications**
+Due to its high performance and power efficiency, the recycled folded cascode OTA is well-suited for use in analog front-ends, ADCs, and biomedical sensor interfaces.
+
+
 
