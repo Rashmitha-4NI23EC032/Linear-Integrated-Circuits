@@ -77,3 +77,15 @@ Monostable 555 Gives Clean, Consistent Pulses Finally, when we triggered a monos
 | **Case 3**<br>(ON = 0.3 ms, OFF = 0.4 ms)<br>with inverter | Inverter used after 555 output | Shows how logical inversion helps overcome 555 timer’s limitations, allowing ON < OFF timing. |
 ## Simulation in Virtual Lab Astable Multivibrator
 
+**Circuit Diagram**
+
+
+![Image](https://github.com/user-attachments/assets/8f2efc15-4b2b-47e7-879d-ad9bbb065060)
+
+
+**Output Waveforms**
+
+
+![Image](https://github.com/user-attachments/assets/d378d2b7-f43c-46f9-a22b-d8dbe62b2a22)
+
+![Image](https://github.com/user-attachments/assets/3a5b98de-b607-4c89-91ef-a055e5688728)
