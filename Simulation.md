@@ -9,6 +9,28 @@ This paper presents a detailed comparative study of both architectures in terms 
 ## 	DESIGN OVERVEIW
 **Recycled Folded Cascode OTA**
 The Recycled Folded Cascode OTA is based on a traditional folded cascode topology but includes additional transconductance paths and current- reuse techniques to enhance performance. In this architecture, the current from the folded cascode input stage is reused by a secondary gain-boosting path, effectively increasing the output resistance and overall gain. The recycling path improves the transconductance without a corresponding increase in power or area. This design is inherently single-stage, which provides wide bandwidth and better frequency response due to the absence of Miller compensation. It is particularly suited for low-voltage, low-power applications requiring high-speed operation.
+## Simulation 
+![Image](https://github.com/user-attachments/assets/4fcb79e8-e3e7-4857-8e90-2c1b4a65ab11)
+- For	design	of	RFC	using	gm/ID	methodology specifications are
+- Unity gain bandwidth = 120MHz Load capacitance = 5.6pF Parameter K =3
+- Supply voltage =1.2v
+- The UGB is taken as 120MHz. The relation between transconductance of the OTA and the UGB is given by
+- 𝐺𝑚𝑅𝐹𝐶 = 𝜔𝑡𝐶𝐿
+- The transconductance of the input transistor is given as
+- 𝐺𝑚𝑅𝐹𝐶 = 𝑔𝑚1𝑎(1 + 𝑘)
+- The 𝑔𝑚1𝑎 gives the transconductance of the input PMOS transistor named as M1a. The value of K is assumed to be 3. The input transconductance
+required for the UGB is found by substituting
+- 𝑔𝑚1𝑎=(1 + 𝑘) = 𝜔𝑡𝐶𝐿
+By putting all the values in the above equation the transconductance of the input transistor required is 1.05mS. The DC current required for getting the transconductance is given by
+- 𝐼𝐷1𝑎 =𝑔𝑚1𝑎𝑔𝑚⁄𝐼𝐷
+The power consumption depends on the 𝑔𝑚⁄𝐼𝐷 . As we are operating in moderate inversion, the gm/ID is chooen to be moderately high so the power consumption is decreased and the parasistic capacitance is very less compared to weak inversion. We assumed a gm/ID of 21. So the input DC current is found to be 50uA. The transcondcutance of M1a and M2a are assumed to be equal so the power consumed by them are also same. M1a and M2a comprises the half circuit so the power consumption by M1a, M2a, M3a and M4a is  4ID.  So  the  current  flowing  through M0 is 200uA. As we have assumed K as 3 so the transconductance of M3a is 3 times that of the M3b. The transconductance of M3a is 3.15mS. By choosing same   𝑔𝑚⁄𝐼𝐷   for   M1a   and   M3a   the three times of input so the DC current is 150uA. By applying KCL at the cascode node the current flowing in M1a is 50uA and current flowing in M3a is 150uA so the through M5 and M7 is 100uA. As the path M2b, M11 and M3b	acts	as	a	unity gain amplifier so the transconductance of M3b should be same  as  M2b  which  is  same  as  that  of M1a. By choosing the same region of operation the DC current  through  M3b  is  same  as  that  of the M1a and is 50uA. As the current flowing through M5,
+M7 and M9 are same so the current
+consumed by them is also same 50uA.
+- So the total current consumption of the OTA is
+- 𝐼𝑅𝐹𝐶 = 8 ∗ 𝐼𝑏𝑖𝑎𝑠 = 400𝑢𝐴
+- The power supply voltage used is 1.2volts. So the power consumption is found to be
+- 𝑃𝑜𝑤𝑒𝑟𝑅𝐹𝐶 = 1.2 ∗ 𝐼𝑅𝐹𝐶
+- PowerRFC =480𝑢𝑊.
 
  
 
