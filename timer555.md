@@ -44,5 +44,7 @@ The multivibrators are classified into three categories-
 
   ## Astable multivibrator and monostable multivibrator using 555 timer IC
   **Circuit Diagram**
+  ![Image](https://github.com/user-attachments/assets/6dfda79b-c236-429f-bc2c-40f6b9bad91f)
+  ## Calculation 
   
   
